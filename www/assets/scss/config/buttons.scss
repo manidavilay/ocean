@@ -1,0 +1,71 @@
+/* ---------------------- */
+/*         BUTTONS        */
+/* ---------------------- */
+
+@import '../config/variables.scss';
+@import '../config/fonts.scss';
+
+.blue-btn {
+	width: 265px;
+	height: 58px;
+	border-radius: 38px;
+	background-color: $black;
+	color: $white;
+	font-family: 'Montserrat';
+	font-weight: $fw-regular;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.grey-btn {
+	width: 70px;
+	height: 26px;
+	border-radius: 24px;
+	background-color: #D9D9D9;
+	color: #000000;
+	font-family: 'Montserrat';
+	font-size: 14px;
+	line-height: 23px;
+}
+
+.return-btn {
+	position: absolute;
+	top: 85px;
+	left: 25px;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	background-color: $dark-blue;
+	background-image: url('../../img/white-left-chevron.svg');
+	background-repeat: no-repeat;
+	background-size: 10px;
+	background-position: center;
+	color: transparent;
+}
+
+.add-picture-btn {
+	position: absolute;
+	bottom: 5px;
+	right: 30px;
+	width: 41px;
+	height: 41px;
+	border-radius: 100%;
+	background-image: url('../../img/camera.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 25px;
+	background-color: $white;
+}
+
+.long-grey-btn {
+	width: 284px;
+	height: 54px;
+	margin: 0 0 37px 0;
+	border-radius: 8px;
+	background-color: $white-beige;
+	color: $dark-blue;
+	font-family: 'Montserrat';
+	font-weight: $fw-regular;
+	font-size: 18px;
+	line-height: 22px;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "surfrider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch assets/scss -o assets/css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "node-sass": "^6.0.0",
+    "slick-slider": "^1.8.2"
+  }
+}

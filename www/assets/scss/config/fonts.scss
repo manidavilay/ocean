@@ -1,0 +1,167 @@
+/* ----------------------------- *
+ *             FONTS             *
+ * ----------------------------- */
+
+@import '../config/variables.scss';
+
+/* ------ MONTSERRAT BLACK ------ */
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: $fw-black;
+	src: url('../../fonts/Montserrat/Montserrat-Black.woff2') format('woff2');
+	font-display: swap;
+}
+
+/* ------ MONTSERRAT BLACK ITALIC ------ */
+@font-face {
+	font-family: 'Montserrat';
+	font-style: italic;
+	font-weight: $fw-black;
+	src: url('../../fonts/Montserrat/Montserrat-Black.woff2') format('woff2');
+	font-display: swap;
+}
+
+/* ------ MONTSERRAT BOLD ------ */
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: $fw-bold;
+	src: url('../../fonts/Montserrat/Montserrat-Black.woff2') format('woff2');
+	font-display: swap;
+}
+
+/* ------ MONTSERRAT BOLD ITALIC ------ */
+@font-face {
+	font-family: 'Montserrat';
+	font-style: italic;
+	font-weight: $fw-bold;
+	src: url('../../fonts/Montserrat/Montserrat-Black.woff2') format('woff2');
+	font-display: swap;
+}
+
+/* ------ MONTSERRAT EXTRA BOLD ------ */
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: $fw-extrabold;
+	src: url('../../fonts/Montserrat/Montserrat-Black.woff2') format('woff2');
+	font-display: swap;
+}
+
+/* ------ MONTSERRAT EXTRA BOLD ITALIC ------ */
+@font-face {
+	font-family: 'Montserrat';
+	font-style: italic;
+	font-weight: $fw-extrabold;
+	src: url('../../fonts/Montserrat/Montserrat-Black.woff2') format('woff2');
+	font-display: swap;
+}
+
+/* ------ MONTSERRAT EXTRA LIGHT ------ */
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: $fw-extralight;
+	src: url('../../fonts/Montserrat/Montserrat-Black.woff2') format('woff2');
+	font-display: swap;
+}
+
+/* ------ MONTSERRAT EXTRA LIGHT ITALIC ------ */
+@font-face {
+	font-family: 'Montserrat';
+	font-style: italic;
+	font-weight: $fw-extralight;
+	src: url('../../fonts/Montserrat/Montserrat-Black.woff2') format('woff2');
+	font-display: swap;
+}
+
+/* ------ MONTSERRAT ITALIC ------ */
+@font-face {
+	font-family: 'Montserrat';
+	font-style: italic;
+	font-weight: $fw-regular;
+	src: url('../../fonts/Montserrat/Montserrat-Black.woff2') format('woff2');
+	font-display: swap;
+}
+
+/* ------ MONTSERRAT LIGHT ------ */
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: $fw-light;
+	src: url('../../fonts/Montserrat/Montserrat-Black.woff2') format('woff2');
+	font-display: swap;
+}
+
+/* ------ MONTSERRAT LIGHT ITALIC ------ */
+@font-face {
+	font-family: 'Montserrat';
+	font-style: italic;
+	font-weight: $fw-light;
+	src: url('../../fonts/Montserrat/Montserrat-Black.woff2') format('woff2');
+	font-display: swap;
+}
+
+/* ------ MONTSERRAT MEDIUM ------ */
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: $fw-medium;
+	src: url('../../fonts/Montserrat/Montserrat-Black.woff2') format('woff2');
+	font-display: swap;
+}
+
+/* ------ MONTSERRAT MEDIUM ITALIC ------ */
+@font-face {
+	font-family: 'Montserrat';
+	font-style: italic;
+	font-weight: $fw-medium;
+	src: url('../../fonts/Montserrat/Montserrat-Black.woff2') format('woff2');
+	font-display: swap;
+}
+
+/* ------ MONTSERRAT REGULAR ------ */
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: $fw-regular;
+	src: url('../../fonts/Montserrat/Montserrat-Black.woff2') format('woff2');
+	font-display: swap;
+}
+
+/* ------ MONTSERRAT SEMI BOLD ------ */
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: $fw-semibold;
+	src: url('../../fonts/Montserrat/Montserrat-Black.woff2') format('woff2');
+	font-display: swap;
+}
+
+/* ------ MONTSERRAT SEMI BOLD ITALIC ------ */
+@font-face {
+	font-family: 'Montserrat';
+	font-style: italic;
+	font-weight: $fw-semibold;
+	src: url('../../fonts/Montserrat/Montserrat-Black.woff2') format('woff2');
+	font-display: swap;
+}
+
+/* ------ MONTSERRAT THIN ------ */
+@font-face {
+	font-family: 'Montserrat';
+	font-style: normal;
+	font-weight: $fw-thin;
+	src: url('../../fonts/Montserrat/Montserrat-Black.woff2') format('woff2');
+	font-display: swap;
+}
+
+/* ------ MONTSERRAT THIN ITALIC ------ */
+@font-face {
+	font-family: 'Montserrat';
+	font-style: italic;
+	font-weight: $fw-thin;
+	src: url('../../fonts/Montserrat/Montserrat-Black.woff2') format('woff2');
+	font-display: swap;
+}

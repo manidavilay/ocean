@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/config/reset.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/config/fonts.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/config/variables.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/config/buttons.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/config/inputs.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/pages/subscription.css" type="text/css">
+    <title>Ocean</title>
+</head>
+<body>
+    <div class="subscription">
+        <div class="subscription__wrapper subscription__wrapper--first">
+            <button class="return-btn"><a href="onboarding.html">back</a></button>
+            <div class="subscription__progression-bar">
+                <div class="progression progression--first"></div>
+            </div>
+            <h2 class="subscription__subtitle">Comment vous appelez-vous ?</h2>
+            <img src="./assets/img/wave.svg" alt="" class="subscription__wave">
+            <form action="" class="subscription__form">
+                <input type="text" placeholder="Votre nom" />
+                <input type="text" placeholder="Votre prénom" />
+                <input type="text" placeholder="Adresse@mail" />
+            </form>
+            <button class="blue-btn subscription-first-next-btn">Suivant</button>
+        </div>
+
+        <div class="subscription__wrapper subscription__wrapper--second">
+            <button class="return-btn">back</button>
+            <div class="subscription__progression-bar">
+                <div class="progression progression--second"></div>
+            </div>
+            <h2 class="subscription__subtitle">Quel âge avez-vous ?</h2>
+            <img src="./assets/img/wave.svg" alt="" class="subscription__wave"> 
+            <button class="blue-btn subscription-second-next-btn">Suivant</button>
+        </div>
+
+        <div class="subscription__wrapper subscription__wrapper--third">
+            <button class="return-btn">back</button>
+            <div class="subscription__progression-bar">
+                <div class="progression progression--third"></div>
+            </div>
+            <h2 class="subscription__subtitle">Lequel êtes-vous ?</h2>
+            <img src="./assets/img/wave.svg" alt="" class="subscription__wave">
+            <div class="subscription__gender-wrapper">
+                <div class="subscription__gender"><p>Homme</p></div>
+                <div class="subscription__gender"><p>Femme</p></div>
+            </div>
+            <p class="subscription__nogender">Je ne souhaite pas le renseigner.</p>
+            <button class="blue-btn subscription-third-next-btn">Suivant</button>
+        </div>
+
+        <div class="subscription__wrapper subscription__wrapper--fourth">
+            <button class="return-btn">back</button>
+            <div class="subscription__progression-bar">
+                <div class="progression progression--fourth"></div>
+            </div>
+            <h2 class="subscription__subtitle">Une petite photo ?</h2>
+            <img src="./assets/img/wave.svg" alt="" class="subscription__wave">
+            <div class="subscription__picture">
+                <button class="add-picture-btn"></button>
+            </div> 
+            <p class="subscription__later">Ajouter plus tard.</p>
+            <button class="blue-btn subscription-fourth-next-btn">Suivant</button>
+        </div>
+
+        <div class="subscription__wrapper subscription__wrapper--fifth">
+            <button class="return-btn">back</button>
+            <div class="subscription__progression-bar">
+                <div class="progression progression--fifth"></div>
+            </div>
+            <h2 class="subscription__subtitle">Quelle est votre pratique ?</h2>
+            <img src="./assets/img/wave.svg" alt="" class="subscription__wave"> 
+            <div class="subscription__activity-wrapper">
+                <div class="subscription__activity"><p>Natation</p></div>
+                <div class="subscription__activity"><p>Surf</p></div>
+            </div>
+            <p class="subscription__later">Je ne souhaite pas le renseigner.</p>
+            <button class="blue-btn subscription-fifth-next-btn">Suivant</button>
+        </div>
+
+        <div class="subscription__wrapper subscription__wrapper--sixth">
+            <button class="return-btn">back</button>
+            <div class="subscription__progression-bar">
+                <div class="progression progression--sixth"></div>
+            </div>
+            <h2 class="subscription__subtitle">Quel est votre niveau ?</h2>
+            <img src="./assets/img/wave.svg" alt="" class="subscription__wave">
+            <div class="subscription__level-wrapper">
+                <button class="long-grey-btn">Débutant</button>
+                <button class="long-grey-btn">Intermédiaire</button>
+                <button class="long-grey-btn">Expérimenté</button>
+            </div> 
+            <button class="blue-btn subscription-sixth-next-btn">Suivant</button>
+        </div>
+
+        <div class="subscription__wrapper subscription__wrapper--seventh">
+            <button class="return-btn">back</button>
+            <div class="subscription__progression-bar">
+                <div class="progression progression--seventh"></div>
+            </div>
+            <h2 class="subscription__subtitle">Quel est votre niveau ?</h2>
+            <img src="./assets/img/wave.svg" alt="" class="subscription__wave"> 
+            <button class="blue-btn subscription-seventh-next-btn">Suivant</button>
+        </div>
+
+        <div class="subscription__wrapper subscription__wrapper--eighth">
+            <button class="return-btn">back</button>
+            <div class="subscription__progression-bar">
+                <div class="progression progression--eighth"></div>
+            </div>
+            <h2 class="subscription__subtitle">Montre connectée</h2>
+            <img src="./assets/img/wave.svg" alt="" class="subscription__wave"> 
+            <button class="long-grey-btn">Jumeler</button>
+            <p class="subscription__later">Je ne possède pas de montre.</p>
+            <button class="blue-btn subscription-eighth-next-btn">Suivant</button>
+        </div>
+
+        <div class="subscription__wrapper subscription__wrapper--nineth">
+            <h2 class="subscription__title">Profil Complet !</h2>
+            <p class="subscription__text">Vous pouvez maintenant profiter de notre plateforme !</p>
+            <img src="./assets/img/check-circle.svg" alt="" class="subscription__check">
+            <button class="blue-btn">Découvrir</button>
+        </div>
+    </div>
+    <script src="./assets/js/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/js/lib/slick.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>

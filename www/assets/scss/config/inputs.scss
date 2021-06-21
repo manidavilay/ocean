@@ -1,0 +1,19 @@
+/* ---------------------- */
+/*         INPUTS         */
+/* ---------------------- */
+
+@import '../config/variables.scss';
+@import '../config/fonts.scss';
+
+input[type=text] {
+	width: 280px;
+	height: 60px;
+	border-radius: 10px;
+	background-color: $white;
+	color: rgba(17,32,94, 0.3);
+	font-family: 'Montserrat';
+	font-weight: $fw-regular;
+	font-size: 14px;
+	line-height: 20px;
+	border: none;
+}

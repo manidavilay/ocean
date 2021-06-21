@@ -1,0 +1,169 @@
+/* ---------------------- */
+/*       ON BOARDING      */
+/* ---------------------- */
+
+@import '../config/variables.scss';
+@import '../config/fonts.scss';
+
+.onboarding {
+	background-color: $main-blue;
+	background-image: url('../../img/background.svg');
+	background-repeat: no-repeat;
+
+	&.is-hidden {
+		display: none;
+	}
+	
+	&__first {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		height: 100vh;
+
+		&.is-hidden {
+			display: none;
+		}
+	}
+
+	&__title {
+		width: 80%;
+		font-family: 'Montserrat';
+		font-size: 40px;
+		font-weight: $fw-semibold;
+		line-height: 45px;
+		text-align: center;
+		color: $white;
+	}
+
+	&__image {
+		width: 200px;
+		height: 340px;
+		margin: 50px 0 60px;
+	}
+
+	&__text {
+		margin: 22px 0 0 0;
+		font-family: 'Montserrat';
+		font-size: 14px;
+		font-weight: $fw-light;
+		line-height: 22px;
+		color: $white;
+	}
+
+	&__link {
+		text-decoration: underline;
+	}
+
+	&__second {
+		display: none;
+		flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: $main-blue;
+
+		&.is-active {
+			display: flex;
+		}
+	}
+
+	&__pass-btn {
+		position: absolute;
+		top: 30px;
+    right: 15px;
+	}
+
+	&__slider-wrapper {
+    width: 100%;
+    height: 100%;
+
+		.slick-list {
+			overflow-x: hidden;
+
+			.slick-track {
+				display: flex;
+				height: 100vh;
+
+				.slick-slide {
+					display: flex;
+					flex-direction: column;
+				}
+			}
+		}
+
+		.slick-dots {
+			position: absolute;
+			bottom: 140px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			justify-content: center;
+			
+			li {
+				width: 10px;
+				height: 10px;
+				margin: 0 5px;
+				border-radius: 100%;
+				background-color: $white;
+				color: $white;
+				font-size: 0;
+			}
+
+			.slick-active {
+				width: 16px;
+				background-color: $dark-blue;
+				border-radius: 5px;
+			}
+		}
+	}
+
+	&__slide {
+		position: relative;
+		background-repeat: no-repeat;
+
+		.onboarding__image {
+			margin: 90px auto 40px;
+		}
+
+		&--first {
+			background-image: url('../../img/background-2.svg');
+		}
+
+		&--second {
+			background-image: url('../../img/background-3.svg');
+		}
+
+		&--last {
+			background-image: url('../../img/background-4.svg');
+
+			.blue-btn {
+				position: absolute;
+				bottom: -140px;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+		}
+	}
+
+	&__subtitle {
+		width: 80%;
+		margin: auto;
+		font-family: 'Montserrat';
+		font-size: 25px;
+		font-weight: $fw-bold;
+		line-height: 30px;
+		color: $white;
+		text-align: center;
+	}
+
+	&__description {
+    width: 80%;
+    margin: 20px auto 0;
+		font-family: 'Montserrat';
+		font-size: 18px;
+		line-height: 22px;
+		color: $white;
+		text-align: center;
+	}
+}
