@@ -13,9 +13,9 @@
 	&__wrapper {
 		position: relative;
 		display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
 		width: 100%;
 		height: 100%;
 		margin: auto;
@@ -155,7 +155,7 @@
 			&--fourth {
 				width: 76px;
 			}
-			
+
 			&--fifth {
 				width: 87px;
 			}
@@ -180,7 +180,7 @@
 
 	&__subtitle {
 		position: absolute;
-    top: 160px;
+		top: 160px;
 		font-family: 'Montserrat';
 		font-weight: $fw-semibold;
 		font-size: 30px;
@@ -202,7 +202,7 @@
 
 	&__text {
 		width: 75%;
-    margin: 60px 0 40px 0;
+		margin: 60px 0 40px 0;
 		font-family: 'Montserrat';
 		font-weight: $fw-regular;
 		font-size: 16px;
@@ -213,7 +213,7 @@
 
 	&__small-text {
 		width: 75%;
-    margin: -20px 0 40px 0;
+		margin: -20px 0 40px 0;
 		font-family: 'Montserrat';
 		font-weight: $fw-regular;
 		font-size: 10px;
@@ -224,7 +224,7 @@
 
 	&__wave {
 		position: absolute;
-    top: 260px;
+		top: 260px;
 	}
 
 	&__check {
@@ -234,8 +234,8 @@
 
 	&__form {
 		display: flex;
-    flex-direction: column;
-    align-items: center;
+		flex-direction: column;
+		align-items: center;
 		width: 80%;
 		margin: 160px 0 35px 0;
 
@@ -253,7 +253,7 @@
 	&__gender-wrapper,
 	&__activity-wrapper {
 		display: flex;
-    margin: 110px 0 90px 0;
+		margin: 110px 0 90px 0;
 	}
 
 	&__gender,
@@ -305,14 +305,14 @@
 		position: relative;
 		width: 228px;
 		height: 228px;
-    margin: 130px 0 60px 0;
+		margin: 130px 0 60px 0;
 		border-radius: 100%;
-		background-color: rgba(255,255,255, 0.6);
+		background-color: rgba(255, 255, 255, 0.6);
 	}
 
 	&__level-wrapper {
 		display: flex;
-    flex-direction: column;
+		flex-direction: column;
 		margin: 180px 0 60px 0;
 	}
 }
