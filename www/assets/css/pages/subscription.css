@@ -161,7 +161,7 @@
 .subscription {
   width: 100%;
   height: 100vh;
-  background-color: #0073BE;
+  background-color: #274C97;
 }
 .subscription__wrapper {
   position: relative;
@@ -174,7 +174,7 @@
   margin: auto;
   background-repeat: no-repeat;
 }
-.subscription__wrapper .blue-btn {
+.subscription__wrapper .yellow-btn {
   position: absolute;
   bottom: 53px;
 }
@@ -235,7 +235,7 @@
 }
 .subscription__wrapper--eighth {
   display: none;
-  background-image: url("../../img/background-9.svg");
+  background-image: url("../../img/background-16.svg");
   background-position: bottom;
 }
 .subscription__wrapper--eighth.is-active {
@@ -243,10 +243,18 @@
 }
 .subscription__wrapper--nineth {
   display: none;
-  background-image: url("../../img/background-8.svg");
+  background-image: url("../../img/background-9.svg");
   background-position: bottom left;
 }
 .subscription__wrapper--nineth.is-active {
+  display: flex;
+}
+.subscription__wrapper--tenth {
+  display: none;
+  background-image: url("../../img/background-17.svg");
+  background-position: bottom left;
+}
+.subscription__wrapper--tenth.is-active {
   display: flex;
 }
 .subscription__progression-bar {
@@ -261,7 +269,7 @@
 .subscription__progression-bar .progression {
   height: 9px;
   border-radius: 9px;
-  background-color: #11205E;
+  background-color: #FFAD06;
 }
 .subscription__progression-bar .progression--first {
   width: 17px;
@@ -287,8 +295,12 @@
 .subscription__progression-bar .progression--eighth {
   width: 158px;
 }
+.subscription__progression-bar .progression--nineth {
+  width: 164px;
+}
 .subscription__subtitle {
-  margin: 50px 0 30px 0;
+  position: absolute;
+  top: 160px;
   font-family: "Montserrat";
   font-weight: 600;
   font-size: 30px;
@@ -308,7 +320,7 @@
 }
 .subscription__text {
   width: 75%;
-  margin: 0 0 75px 0;
+  margin: 60px 0 40px 0;
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 16px;
@@ -316,8 +328,19 @@
   color: #FFFFFF;
   text-align: center;
 }
+.subscription__small-text {
+  width: 75%;
+  margin: -20px 0 40px 0;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 21px;
+  color: #FFFFFF;
+  text-align: center;
+}
 .subscription__wave {
-  margin: 0 0 72px 0;
+  position: absolute;
+  top: 260px;
 }
 .subscription__check {
   width: 218px;
@@ -328,14 +351,19 @@
   flex-direction: column;
   align-items: center;
   width: 80%;
-  margin: 0 0 125px 0;
+  margin: 160px 0 35px 0;
 }
 .subscription__form input {
   margin: 0 0 30px 0;
   padding: 0 20px;
 }
+.subscription__input {
+  margin: 20px 0 35px 0;
+  padding: 0 20px;
+}
 .subscription__gender-wrapper, .subscription__activity-wrapper {
   display: flex;
+  margin: 110px 0 90px 0;
 }
 .subscription__gender, .subscription__activity {
   position: relative;
@@ -358,7 +386,7 @@
 }
 .subscription__nogender, .subscription__later {
   position: relative;
-  margin: 70px 0 90px 40px;
+  margin: 0px 0 0px 40px;
   font-family: "Montserrat";
   font-size: 14px;
   font-weight: 400;
@@ -380,12 +408,14 @@
   position: relative;
   width: 228px;
   height: 228px;
+  margin: 130px 0 60px 0;
   border-radius: 100%;
   background-color: rgba(255, 255, 255, 0.6);
 }
 .subscription__level-wrapper {
   display: flex;
   flex-direction: column;
+  margin: 180px 0 60px 0;
 }
 
 /*# sourceMappingURL=subscription.css.map */

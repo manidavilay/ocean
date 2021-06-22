@@ -21,7 +21,7 @@
 		margin: auto;
 		background-repeat: no-repeat;
 
-		.blue-btn {
+		.yellow-btn {
 			position: absolute;
 			bottom: 53px;
 		}
@@ -97,7 +97,7 @@
 
 		&--eighth {
 			display: none;
-			background-image: url('../../img/background-9.svg');
+			background-image: url('../../img/background-16.svg');
 			background-position: bottom;
 
 			&.is-active {
@@ -107,7 +107,17 @@
 
 		&--nineth {
 			display: none;
-			background-image: url('../../img/background-8.svg');
+			background-image: url('../../img/background-9.svg');
+			background-position: bottom left;
+
+			&.is-active {
+				display: flex;
+			}
+		}
+
+		&--tenth {
+			display: none;
+			background-image: url('../../img/background-17.svg');
 			background-position: bottom left;
 
 			&.is-active {
@@ -128,7 +138,7 @@
 		.progression {
 			height: 9px;
 			border-radius: 9px;
-			background-color: $dark-blue;
+			background-color: $yellow;
 
 			&--first {
 				width: 17px;
@@ -161,11 +171,16 @@
 			&--eighth {
 				width: 158px;
 			}
+
+			&--nineth {
+				width: 164px;
+			}
 		}
 	}
 
 	&__subtitle {
-    margin: 50px 0 30px 0;
+		position: absolute;
+    top: 160px;
 		font-family: 'Montserrat';
 		font-weight: $fw-semibold;
 		font-size: 30px;
@@ -187,7 +202,7 @@
 
 	&__text {
 		width: 75%;
-		margin: 0 0 75px 0;
+    margin: 60px 0 40px 0;
 		font-family: 'Montserrat';
 		font-weight: $fw-regular;
 		font-size: 16px;
@@ -196,8 +211,20 @@
 		text-align: center;
 	}
 
+	&__small-text {
+		width: 75%;
+    margin: -20px 0 40px 0;
+		font-family: 'Montserrat';
+		font-weight: $fw-regular;
+		font-size: 10px;
+		line-height: 21px;
+		color: $white;
+		text-align: center;
+	}
+
 	&__wave {
-		margin: 0 0 72px 0;
+		position: absolute;
+    top: 260px;
 	}
 
 	&__check {
@@ -210,7 +237,7 @@
     flex-direction: column;
     align-items: center;
 		width: 80%;
-		margin: 0 0 125px 0;
+		margin: 160px 0 35px 0;
 
 		input {
 			margin: 0 0 30px 0;
@@ -218,9 +245,15 @@
 		}
 	}
 
+	&__input {
+		margin: 20px 0 35px 0;
+		padding: 0 20px;
+	}
+
 	&__gender-wrapper,
 	&__activity-wrapper {
 		display: flex;
+    margin: 110px 0 90px 0;
 	}
 
 	&__gender,
@@ -248,7 +281,7 @@
 	&__nogender,
 	&__later {
 		position: relative;
-    margin: 70px 0 90px 40px;
+		margin: 0px 0 0px 40px;
 		font-family: 'Montserrat';
 		font-size: 14px;
 		font-weight: $fw-regular;
@@ -272,6 +305,7 @@
 		position: relative;
 		width: 228px;
 		height: 228px;
+    margin: 130px 0 60px 0;
 		border-radius: 100%;
 		background-color: rgba(255,255,255, 0.6);
 	}
@@ -279,5 +313,6 @@
 	&__level-wrapper {
 		display: flex;
     flex-direction: column;
+		margin: 180px 0 60px 0;
 	}
 }

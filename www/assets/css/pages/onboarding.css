@@ -159,7 +159,7 @@
   font-display: swap;
 }
 .onboarding {
-  background-color: #0073BE;
+  background-color: #274C97;
   background-image: url("../../img/background.svg");
   background-repeat: no-repeat;
 }
@@ -207,7 +207,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #0073BE;
+  background-color: #274C97;
 }
 .onboarding__second.is-active {
   display: flex;
@@ -251,7 +251,7 @@
 }
 .onboarding__slider-wrapper .slick-dots .slick-active {
   width: 16px;
-  background-color: #11205E;
+  background-color: #FFAD06;
   border-radius: 5px;
 }
 .onboarding__slide {
@@ -270,7 +270,7 @@
 .onboarding__slide--last {
   background-image: url("../../img/background-4.svg");
 }
-.onboarding__slide--last .blue-btn {
+.onboarding__slide--last .yellow-btn {
   position: absolute;
   bottom: -140px;
   left: 50%;

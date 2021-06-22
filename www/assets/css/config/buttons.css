@@ -181,6 +181,18 @@
   line-height: 23px;
 }
 
+.yellow-btn {
+  width: 265px;
+  height: 58px;
+  border-radius: 38px;
+  background-color: #FFAD06;
+  color: #11205E;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
 .return-btn {
   position: absolute;
   top: 85px;

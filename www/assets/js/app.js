@@ -90,4 +90,14 @@ $(document).ready(function() {
 		$('.subscription__wrapper--eighth').removeClass('is-active')
 		$('.subscription__wrapper--nineth').addClass('is-active')
 	});
+
+	$('.subscription__wrapper--nineth .return-btn').on('click', function() {
+		$('.subscription__wrapper--eighth').addClass('is-active')
+		$('.subscription__wrapper--nineth').removeClass('is-active')
+	});
+
+	$('.subscription-nineth-next-btn').on('click', function() {
+		$('.subscription__wrapper--nineth').removeClass('is-active')
+		$('.subscription__wrapper--tenth').addClass('is-active')
+	});
 });
