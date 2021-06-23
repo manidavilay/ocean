@@ -197,6 +197,197 @@ $(document).ready(function () {
 		$('.subscription__wrapper--nineth .light-yellow-btn').addClass('is-active')
 	});
 
+	$('.session__wrapper--first .color--blue').on('click', function() {
+		$('.session__wrapper--first .session__next-btn').removeClass('is-active')
+		$('.session__wrapper--first .color--blue').addClass('is-active')
+		$('.session__wrapper--first .color--green').removeClass('is-active')
+		$('.session__wrapper--first .color--brown').removeClass('is-active')
+		$('.session__wrapper--first .light-yellow-btn').addClass('is-active')
+	});
+
+	$('.session__wrapper--first .color--green').on('click', function() {
+		$('.session__wrapper--first .session__next-btn').removeClass('is-active')
+		$('.session__wrapper--first .color--blue').removeClass('is-active')
+		$('.session__wrapper--first .color--green').addClass('is-active')
+		$('.session__wrapper--first .color--brown').removeClass('is-active')
+		$('.session__wrapper--first .light-yellow-btn').addClass('is-active')
+	});
+
+	$('.session__wrapper--first .color--brown').on('click', function() {
+		$('.session__wrapper--first .session__next-btn').removeClass('is-active')
+		$('.session__wrapper--first .color--blue').removeClass('is-active')
+		$('.session__wrapper--first .color--green').removeClass('is-active')
+		$('.session__wrapper--first .color--brown').addClass('is-active')
+		$('.session__wrapper--first .light-yellow-btn').addClass('is-active')
+	});
+
+	$('.session__wrapper--first .session__next-btn').on('click', function() {
+		$('.session__wrapper--first .session__next-btn').addClass('is-active')
+		$('.session__wrapper--first .color--blue').removeClass('is-active')
+		$('.session__wrapper--first .color--green').removeClass('is-active')
+		$('.session__wrapper--first .color--brown').removeClass('is-active')
+		$('.session__wrapper--first .light-yellow-btn').addClass('is-active')
+	});
+
+	$('.session__wrapper--second .session__water-quality--good').on('click', function() {
+		$('.session__wrapper--second .session__water-quality--good').addClass('is-active')
+		$('.session__wrapper--second .session__water-quality--bad').removeClass('is-active')
+		$('.session__wrapper--second .session__next-btn').removeClass('is-active')
+		$('.session__wrapper--second .light-yellow-btn').addClass('is-active')
+	});
+
+	$('.session__wrapper--second .session__water-quality--bad').on('click', function() {
+		$('.session__wrapper--second .session__water-quality--good').removeClass('is-active')
+		$('.session__wrapper--second .session__water-quality--bad').addClass('is-active')
+		$('.session__wrapper--second .session__next-btn').removeClass('is-active')
+		$('.session__wrapper--second .light-yellow-btn').addClass('is-active')
+	});
+
+	$('.session__wrapper--second .session__next-btn').on('click', function() {
+		$('.session__wrapper--second .session__next-btn').addClass('is-active')
+		$('.session__wrapper--second .session__water-quality--good').removeClass('is-active')
+		$('.session__wrapper--second .session__water-quality--bad').removeClass('is-active')
+		$('.session__wrapper--second .light-yellow-btn').addClass('is-active')
+	});
+
+	$('.session__wrapper--third .session__products').on('click', function() {
+		$(this).toggleClass('is-active')
+		$('.session__wrapper--third .light-yellow-btn').addClass('is-active')
+	});
+
+	$('.session__wrapper--fourth .session__swimmers .short-number--min').on('click', function() {
+		$('.session__wrapper--fourth .session__swimmers .short-number--min').addClass('is-active')
+		$('.session__wrapper--fourth .session__swimmers .short-number--max').removeClass('is-active')
+		$('.session__wrapper--fourth .session__swimmers .long-number--min').removeClass('is-active')
+		$('.session__wrapper--fourth .session__swimmers .long-number--max').removeClass('is-active')
+		$('.session__wrapper--fourth .session__next-btn').removeClass('is-active')
+		$('.session__wrapper--fourth .light-yellow-btn').addClass('is-active')
+	});
+
+	$('.session__wrapper--fourth .session__swimmers .long-number--min').on('click', function() {
+		$('.session__wrapper--fourth .session__swimmers .short-number--min').removeClass('is-active')
+		$('.session__wrapper--fourth .session__swimmers .short-number--max').removeClass('is-active')
+		$('.session__wrapper--fourth .session__swimmers .long-number--min').addClass('is-active')
+		$('.session__wrapper--fourth .session__swimmers .long-number--max').removeClass('is-active')
+		$('.session__wrapper--fourth .session__next-btn').removeClass('is-active')
+		$('.session__wrapper--fourth .light-yellow-btn').addClass('is-active')
+	});
+
+	$('.session__wrapper--fourth .session__swimmers .long-number--max').on('click', function() {
+		$('.session__wrapper--fourth .session__swimmers .short-number--min').removeClass('is-active')
+		$('.session__wrapper--fourth .session__swimmers .short-number--max').removeClass('is-active')
+		$('.session__wrapper--fourth .session__swimmers .long-number--min').removeClass('is-active')
+		$('.session__wrapper--fourth .session__swimmers .long-number--max').addClass('is-active')
+		$('.session__wrapper--fourth .session__next-btn').removeClass('is-active')
+		$('.session__wrapper--fourth .light-yellow-btn').addClass('is-active')
+	});
+
+	$('.session__wrapper--fourth .session__swimmers .short-number--max').on('click', function() {
+		$('.session__wrapper--fourth .session__swimmers .short-number--min').removeClass('is-active')
+		$('.session__wrapper--fourth .session__swimmers .short-number--max').addClass('is-active')
+		$('.session__wrapper--fourth .session__swimmers .long-number--min').removeClass('is-active')
+		$('.session__wrapper--fourth .session__swimmers .long-number--max').removeClass('is-active')
+		$('.session__wrapper--fourth .session__next-btn').removeClass('is-active')
+		$('.session__wrapper--fourth .light-yellow-btn').addClass('is-active')
+	});
+
+	$('.session__wrapper--fourth .session__activities .short-number--min').on('click', function() {
+		$('.session__wrapper--fourth .session__activities .short-number--min').addClass('is-active')
+		$('.session__wrapper--fourth .session__activities .short-number--max').removeClass('is-active')
+		$('.session__wrapper--fourth .session__activities .long-number--min').removeClass('is-active')
+		$('.session__wrapper--fourth .session__activities .long-number--max').removeClass('is-active')
+		$('.session__wrapper--fourth .session__next-btn').removeClass('is-active')
+		$('.session__wrapper--fourth .light-yellow-btn').addClass('is-active')
+	});
+
+	$('.session__wrapper--fourth .session__activities .long-number--min').on('click', function() {
+		$('.session__wrapper--fourth .session__activities .short-number--min').removeClass('is-active')
+		$('.session__wrapper--fourth .session__activities .short-number--max').removeClass('is-active')
+		$('.session__wrapper--fourth .session__activities .long-number--min').addClass('is-active')
+		$('.session__wrapper--fourth .session__activities .long-number--max').removeClass('is-active')
+		$('.session__wrapper--fourth .session__next-btn').removeClass('is-active')
+		$('.session__wrapper--fourth .light-yellow-btn').addClass('is-active')
+	});
+
+	$('.session__wrapper--fourth .session__activities .long-number--max').on('click', function() {
+		$('.session__wrapper--fourth .session__activities .short-number--min').removeClass('is-active')
+		$('.session__wrapper--fourth .session__activities .short-number--max').removeClass('is-active')
+		$('.session__wrapper--fourth .session__activities .long-number--min').removeClass('is-active')
+		$('.session__wrapper--fourth .session__activities .long-number--max').addClass('is-active')
+		$('.session__wrapper--fourth .session__next-btn').removeClass('is-active')
+		$('.session__wrapper--fourth .light-yellow-btn').addClass('is-active')
+	});
+
+	$('.session__wrapper--fourth .session__activities .short-number--max').on('click', function() {
+		$('.session__wrapper--fourth .session__activities .short-number--min').removeClass('is-active')
+		$('.session__wrapper--fourth .session__activities .short-number--max').addClass('is-active')
+		$('.session__wrapper--fourth .session__activities .long-number--min').removeClass('is-active')
+		$('.session__wrapper--fourth .session__activities .long-number--max').removeClass('is-active')
+		$('.session__wrapper--fourth .session__next-btn').removeClass('is-active')
+		$('.session__wrapper--fourth .light-yellow-btn').addClass('is-active')
+	});
+
+	$('.session__wrapper--fourth .session__next-btn').on('click', function() {
+		$('.session__wrapper--fourth .session__swimmers .short-number--min').removeClass('is-active')
+		$('.session__wrapper--fourth .session__swimmers .short-number--max').removeClass('is-active')
+		$('.session__wrapper--fourth .session__swimmers .long-number--min').removeClass('is-active')
+		$('.session__wrapper--fourth .session__swimmers .long-number--max').removeClass('is-active')
+		$('.session__wrapper--fourth .session__activities .short-number--min').removeClass('is-active')
+		$('.session__wrapper--fourth .session__activities .short-number--max').removeClass('is-active')
+		$('.session__wrapper--fourth .session__activities .long-number--min').removeClass('is-active')
+		$('.session__wrapper--fourth .session__activities .long-number--max').removeClass('is-active')
+		$('.session__wrapper--fourth .session__next-btn').addClass('is-active')
+		$('.session__wrapper--fourth .light-yellow-btn').addClass('is-active')
+	});
+
+	$('.session__wrapper--fifth .long-number--fishing').on('click', function() {
+		$('.session__wrapper--fifth .long-number--fishing').addClass('is-active')
+		$('.session__wrapper--fifth .long-number--hobby').removeClass('is-active')
+		$('.session__wrapper--fifth .long-number--boat').removeClass('is-active')
+		$('.session__wrapper--fifth .session__next-btn').removeClass('is-active')
+		$('.session__wrapper--fifth .light-yellow-btn').addClass('is-active')
+	});
+
+	$('.session__wrapper--fifth .long-number--hobby').on('click', function() {
+		$('.session__wrapper--fifth .long-number--fishing').removeClass('is-active')
+		$('.session__wrapper--fifth .long-number--hobby').addClass('is-active')
+		$('.session__wrapper--fifth .long-number--boat').removeClass('is-active')
+		$('.session__wrapper--fifth .session__next-btn').removeClass('is-active')
+		$('.session__wrapper--fifth .light-yellow-btn').addClass('is-active')
+	});
+
+	$('.session__wrapper--fifth .long-number--boat').on('click', function() {
+		$('.session__wrapper--fifth .long-number--fishing').removeClass('is-active')
+		$('.session__wrapper--fifth .long-number--hobby').removeClass('is-active')
+		$('.session__wrapper--fifth .long-number--boat').addClass('is-active')
+		$('.session__wrapper--fifth .session__next-btn').removeClass('is-active')
+		$('.session__wrapper--fifth .light-yellow-btn').addClass('is-active')
+	});
+
+	$('.session__wrapper--fifth .session__next-btn').on('click', function() {
+		$('.session__wrapper--fifth .long-number--fishing').removeClass('is-active')
+		$('.session__wrapper--fifth .long-number--hobby').removeClass('is-active')
+		$('.session__wrapper--fifth .long-number--boat').removeClass('is-active')
+		$('.session__wrapper--fifth .long-number--min').removeClass('is-active')
+		$('.session__wrapper--fifth .short-number--max').removeClass('is-active')
+		$('.session__wrapper--fifth .session__next-btn').addClass('is-active')
+		$('.session__wrapper--fifth .light-yellow-btn').addClass('is-active')
+	});
+
+	$('.session__wrapper--fifth .session__numbers-boats .long-number--min').on('click', function() {
+		$('.session__wrapper--fifth .long-number--min').addClass('is-active')
+		$('.session__wrapper--fifth .short-number--max').removeClass('is-active')
+		$('.session__wrapper--fifth .session__next-btn').removeClass('is-active')
+		$('.session__wrapper--fifth .light-yellow-btn').addClass('is-active')
+	});
+
+	$('.session__wrapper--fifth .session__numbers-boats .short-number--max').on('click', function() {
+		$('.session__wrapper--fifth .long-number--min').removeClass('is-active')
+		$('.session__wrapper--fifth .short-number--max').addClass('is-active')
+		$('.session__wrapper--fifth .session__next-btn').removeClass('is-active')
+		$('.session__wrapper--fifth .light-yellow-btn').addClass('is-active')
+	});
+
 	/* Timer */
 	var timer = new Timer();
 	$('#chronoExample .startButton').click(function () {

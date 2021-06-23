@@ -24,8 +24,11 @@
                 <div class="color color--green"></div>
                 <div class="color color--brown"></div>
             </div>
-            <p class="session__later">Je ne m'en souviens plus</p> 
-            <button class="yellow-btn session-first-next-btn">Suivant</button>
+            <div class="session__next-btn">
+                <div class="session__round"></div>
+                <p class="session__later">Je ne m'en souviens plus.</p>
+            </div>
+            <button class="light-yellow-btn session-first-next-btn">Suivant</button>
         </div>
 
         <div class="session__wrapper session__wrapper--second">
@@ -36,17 +39,20 @@
             <h2 class="session__subtitle">Qualité <br>de l'eau</h2>
             <img src="./assets/img/yellow-wave.svg" alt="" class="session__wave">
             <div class="session__water-quality-wrapper">
-                <div class="session__water-quality">
+                <div class="session__water-quality session__water-quality--good">
                     <img src="./assets/img/without-trash.svg" alt="">
                     <p>Sans déchets</p>
                 </div>
-                <div class="session__water-quality">
+                <div class="session__water-quality session__water-quality--bad">
                     <img src="./assets/img/with-trash.svg" alt="">
                     <p>Avec déchets</p>
                 </div>
             </div>
-            <p class="session__later">Je ne m'en souviens plus</p> 
-            <button class="yellow-btn session-second-next-btn">Suivant</button>
+            <div class="session__next-btn">
+                <div class="session__round"></div>
+                <p class="session__later">Je ne m'en souviens plus.</p>
+            </div> 
+            <button class="light-yellow-btn session-second-next-btn">Suivant</button>
         </div>
 
         <div class="session__wrapper session__wrapper--third">
@@ -57,62 +63,62 @@
             <h2 class="session__subtitle">Produits utilisés <br>aujourd'hui</h2>
             <img src="./assets/img/yellow-wave.svg" alt="" class="session__wave">
             <div class="session__products-wrapper">
-                <div class="session__products">
+                <div class="session__products session__products--sunscreen">
                     <div class="product">
                         <img src="./assets/img/sunscreen.svg" alt="">
                     </div>
                     <p>Crème solaire</p>
                 </div>
-                <div class="session__products">
+                <div class="session__products session__products--perfume">
                     <div class="product">
                         <img src="./assets/img/perfume.svg" alt="">
                     </div>
                     <p>Parfum / Déodorant</p>
                 </div>
-                <div class="session__products">
+                <div class="session__products session__products--cream">
                     <div class="product">
                         <img src="./assets/img/nourishing-cream.svg" alt="">
                     </div>
                     <p>Crème hydratante</p>
                 </div>
-                <div class="session__products">
+                <div class="session__products session__products--cosmetics">
                     <div class="product">
                         <img src="./assets/img/cosmetics.svg" alt="">
                     </div>
                     <p>Maquillage</p>
                 </div>
-                <div class="session__products">
+                <div class="session__products session__products--gas">
                     <div class="product">
                         <img src="./assets/img/gas.svg" alt="">
                     </div>
                     <p>Essence</p>
                 </div>
-                <div class="session__products">
+                <div class="session__products session__products--cigaret">
                     <div class="product">
                         <img src="./assets/img/cigaret.svg" alt="">
                     </div>
                     <p>Cigarette</p>
                 </div>
-                <div class="session__products">
+                <div class="session__products session__products--pesticides">
                     <div class="product">
                         <img src="./assets/img/pesticides.svg" alt="">
                     </div>
                     <p>Engrais / Pesticides</p>
                 </div>
-                <div class="session__products">
+                <div class="session__products session__products--paint">
                     <div class="product">
                         <img src="./assets/img/paint.svg" alt="">
                     </div>
                     <p>Peinture</p>
                 </div>
-                <div class="session__products">
+                <div class="session__products session__products--more">
                     <div class="product">
                         <img src="./assets/img/more.svg" alt="">
                     </div>
                     <p>Autres</p>
                 </div>
             </div>
-            <button class="yellow-btn session-third-next-btn">Suivant</button>
+            <button class="light-yellow-btn session-third-next-btn">Suivant</button>
         </div>
 
         <div class="session__wrapper session__wrapper--fourth">
@@ -128,10 +134,10 @@
                         Baigneurs
                     </h3>
                     <div class="session__numbers">
-                        <div class="short-number"> <5 </div>
-                        <div class="long-number"> 5 à 20 </div>
-                        <div class="long-number"> 20 à 50 </div>
-                        <div class="short-number"> >50 </div>
+                        <div class="short-number short-number--min"> <5 </div>
+                        <div class="long-number long-number--min"> 5 à 20 </div>
+                        <div class="long-number long-number--max"> 20 à 50 </div>
+                        <div class="short-number short-number--max"> >50 </div>
                     </div>
                 </div>
                 <div class="session__activities">
@@ -139,15 +145,18 @@
                         Pratiquants d'activités <br>nautiques
                     </h3>
                     <div class="session__numbers">
-                        <div class="short-number"> <5 </div>
-                        <div class="long-number">5 à 20 </div>
-                        <div class="long-number">20 à 50 </div>
-                        <div class="short-number"> >50 </div>
+                        <div class="short-number short-number--min"> <5 </div>
+                        <div class="long-number long-number--min">5 à 20 </div>
+                        <div class="long-number long-number--max">20 à 50 </div>
+                        <div class="short-number short-number--max"> >50 </div>
                     </div>
                 </div>
-                <p class="session__later">Je ne m'en souviens plus.</p>
+                <div class="session__next-btn">
+                    <div class="session__round"></div>
+                    <p class="session__later">Je ne m'en souviens plus.</p>
+                </div> 
             </div>
-            <button class="yellow-btn session-fourth-next-btn">Suivant</button>
+            <button class="light-yellow-btn session-fourth-next-btn">Suivant</button>
         </div>
 
         <div class="session__wrapper session__wrapper--fifth">
@@ -160,12 +169,12 @@
             <div class="session__type">
                 <div class="session__boats">
                     <h3 class="session__small-title">
-                        Type de bateaux
+                        Type d'activités
                     </h3>
                     <div class="session__numbers">
-                        <div class="long-number"> Pêche </div>
-                        <div class="long-number"> Loisir </div>
-                        <div class="long-number"> À voiles </div>
+                        <div class="long-number long-number--fishing"> Pêche </div>
+                        <div class="long-number long-number--hobby"> Loisir </div>
+                        <div class="long-number long-number--boat"> À voiles </div>
                     </div>
                 </div>
                 <div class="session__numbers-boats">
@@ -173,13 +182,16 @@
                         Nombre de bateaux
                     </h3>
                     <div class="session__numbers">
-                        <div class="long-number"> 0-1 </div>
-                        <div class="short-number"> >2 </div>
+                        <div class="long-number long-number--min"> 0-1 </div>
+                        <div class="short-number short-number--max"> >2 </div>
                     </div>
                 </div>
-                <p class="session__later">Je ne m'en souviens plus.</p>
+                <div class="session__next-btn">
+                    <div class="session__round"></div>
+                    <p class="session__later">Je ne m'en souviens plus.</p>
+                </div> 
             </div>
-            <button class="yellow-btn session-fifth-next-btn">Suivant</button>
+            <button class="light-yellow-btn session-fifth-next-btn">Suivant</button>
         </div>
 
         <div class="session__wrapper session__wrapper--sixth">

@@ -21,9 +21,16 @@
 		margin: auto;
 		background-repeat: no-repeat;
 
-		.yellow-btn {
+		.yellow-btn,
+		.light-yellow-btn {
 			position: absolute;
 			bottom: 53px;
+		}
+
+		.light-yellow-btn {
+			&.is-active {
+				background-color: $yellow;
+			}
 		}
 
 		&--first {
@@ -168,6 +175,7 @@
 		margin: 20px 0 70px;
 
 		.color {
+			position: relative;
 			width: 65px;
 			height: 65px;
 			margin: 0 25px;
@@ -175,52 +183,116 @@
 
 			&--blue {
 				background-color: $light-blue;
+				transition: all 0.2s ease-in-out;
+
+				&.is-active {
+					&::before {
+						content: '';
+						position: absolute;
+						top: -6px;
+						left: -7px;
+						width: 77px;
+						height: 77px;
+						border-radius: 100%;
+						border: 1px solid $yellow;
+					}
+				}
 			}
 
 			&--green {
 				background-color: $light-green;
+				transition: all 0.2s ease-in-out;
+
+				&.is-active {
+					&::before {
+						content: '';
+						position: absolute;
+						top: -6px;
+						left: -7px;
+						width: 77px;
+						height: 77px;
+						border-radius: 100%;
+						border: 1px solid $yellow;
+					}
+				}
 			}
 
 			&--brown {
 				background-color: $light-brown;
+				transition: all 0.2s ease-in-out;
+
+				&.is-active {
+					&::before {
+						content: '';
+						position: absolute;
+						top: -6px;
+						left: -7px;
+						width: 77px;
+						height: 77px;
+						border-radius: 100%;
+						border: 1px solid $yellow;
+					}
+				}
 			}
 		}
 	}
 
+	&__next-btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		&.is-active {
+			.session__round {
+				position: relative;
+				background-color: $yellow;
+				transition: all 0.2s ease-in-out;
+
+				&::before {
+					content: '';
+					position: absolute;
+					top: -5px;
+					left: -5px;
+					width: 40px;
+					height: 40px;
+					border-radius: 100%;
+					border: 1px solid $yellow;
+				}
+			}
+		}
+	}
+
+	&__round {
+		width: 32px;
+		height: 32px;
+		border-radius: 100%;
+		background-color: $white;
+	}
+
 	&__later {
 		position: relative;
-		margin: 0px 0 0px 40px;
+		margin: 0px 0 0px 10px;
 		font-family: 'Montserrat';
 		font-size: 14px;
 		font-weight: $fw-regular;
 		line-height: 22px;
 		color: $white;
-
-		&::before {
-			content: '';
-			position: absolute;
-			left: -45px;
-			top: 50%;
-			transform: translateY(-50%);
-			width: 32px;
-			height: 32px;
-			border-radius: 100%;
-			background-color: $white;
-		}
 	}
 
 	&__water-quality-wrapper {
 		display: flex;
+		align-items: center;
 		margin: 110px 0 90px 0;
 	}
 
 	&__water-quality {
 		position: relative;
-		width: 142px;
-		height: 185px;
+		width: 132px;
+		height: 172px;
 		margin: 0 6px;
 		background-color: $white;
 		border-radius: 8px;
+		transition: all 0.5s ease-in-out;
 
 		img {
 			position: absolute;
@@ -241,11 +313,47 @@
 			color: $dark-blue;
 			text-align: center;
 		}
+
+		&--good {
+			&.is-active {
+				width: 142px;
+				height: 185px;
+
+				&::before {
+					content: '';
+					position: absolute;
+					top: -8px;
+					left: -6px;
+					width: 152px;
+					height: 199px;
+					border-radius: 8px;
+					border: 1px solid $yellow;
+				}
+			}
+		}
+
+		&--bad {
+			&.is-active {
+				width: 142px;
+				height: 185px;
+
+				&::before {
+					content: '';
+					position: absolute;
+					top: -8px;
+					left: -6px;
+					width: 152px;
+					height: 199px;
+					border-radius: 8px;
+					border: 1px solid $yellow;
+				}
+			}
+		}
 	}
 
 	&__products-wrapper {
-    display: flex;
-    flex-wrap: wrap;
+		display: flex;
+		flex-wrap: wrap;
 		margin: 140px 0 0 0;
 	}
 
@@ -253,7 +361,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-    width: calc(100%/3 - 30px);
+		width: calc(100%/3 - 30px);
 		margin: 15px;
 		opacity: 0.4;
 
@@ -276,12 +384,40 @@
 			color: $white;
 			text-align: center;
 		}
+
+		&--sunscreen,
+		&--perfume,
+		&--cream,
+		&--cosmetics,
+		&--gas,
+		&--cigaret,
+		&--pesticides,
+		&--paint,
+		&--more {
+			position: relative;
+			transition: all 0.2s ease-in-out;
+
+			&.is-active {
+				opacity: 1;
+
+				&::before {
+					content: '';
+					position: absolute;
+					top: -6px;
+					left: 11px;
+					width: 70px;
+					height: 70px;
+					border-radius: 100%;
+					border: 1px solid $yellow;
+				}
+			}
+		}
 	}
 
 	&__frequentations-wrapper {
 		display: flex;
-    flex-direction: column;
-    align-items: center;
+		flex-direction: column;
+		align-items: center;
 		margin: 130px 0 0 0;
 	}
 
@@ -300,6 +436,7 @@
 		margin: 27px 0 54px;
 
 		.short-number {
+			position: relative;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -314,9 +451,29 @@
 			line-height: 22px;
 			color: $dark-blue;
 			opacity: 0.4;
+			transition: all 0.2s ease-in-out;
+
+			&--min,
+			&--max {
+				&.is-active {
+					opacity: 1;
+
+					&::before {
+						content: '';
+						position: absolute;
+						top: -5px;
+						left: -4px;
+						width: 60px;
+						height: 60px;
+						border-radius: 100%;
+						border: 1px solid $yellow;
+					}
+				}
+			}
 		}
 
 		.long-number {
+			position: relative;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -331,6 +488,25 @@
 			line-height: 22px;
 			color: $dark-blue;
 			opacity: 0.4;
+			transition: all 0.2s ease-in-out;
+
+			&--min,
+			&--max {
+				&.is-active {
+					opacity: 1;
+
+					&::before {
+						content: '';
+						position: absolute;
+						top: -7px;
+						left: -7px;
+						width: 95px;
+						height: 65px;
+						border-radius: 38px;
+						border: 1px solid $yellow;
+					}
+				}
+			}
 		}
 	}
 
@@ -342,15 +518,81 @@
 		margin: 130px 0 0 0;
 	}
 
+	&__boats {
+		.long-number {
+
+			&--fishing,
+			&--hobby,
+			&--boat {
+				&.is-active {
+					opacity: 1;
+
+					&::before {
+						content: '';
+						position: absolute;
+						top: -7px;
+						left: -7px;
+						width: 95px;
+						height: 65px;
+						border-radius: 38px;
+						border: 1px solid $yellow;
+					}
+				}
+			}
+		}
+	}
+
 	&__numbers-boats {
+		position: relative;
 		width: 100%;
+
+		.session__numbers {
+
+			&--min,
+			&--max {
+				&.is-active {
+					opacity: 1;
+				}
+			}
+
+			&--min {
+				&.is-active {
+					&::before {
+						content: '';
+						position: absolute;
+						top: -5px;
+						left: -4px;
+						width: 60px;
+						height: 60px;
+						border-radius: 100%;
+						border: 1px solid $yellow;
+					}
+				}
+			}
+
+			&--max {
+				&.is-active {
+					&::before {
+						content: '';
+						position: absolute;
+						top: -7px;
+						left: -7px;
+						width: 95px;
+						height: 65px;
+						border-radius: 38px;
+						border: 1px solid $yellow;
+					}
+				}
+			}
+
+		}
 	}
 
 	&__notes-wrapper {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-    margin: 60px 0 0 0;
+		margin: 60px 0 0 0;
 
 		textarea {
 			width: 288px;
@@ -365,7 +607,7 @@
 	}
 
 	&__thanking-text {
-    margin: 370px 0 -30px 0;
+		margin: 370px 0 -30px 0;
 		font-family: 'Montserrat';
 		font-weight: $fw-semibold;
 		font-size: 25px;

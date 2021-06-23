@@ -271,9 +271,13 @@
   margin: auto;
   background-repeat: no-repeat;
 }
-.session__wrapper .yellow-btn {
+.session__wrapper .yellow-btn,
+.session__wrapper .light-yellow-btn {
   position: absolute;
   bottom: 53px;
+}
+.session__wrapper .light-yellow-btn.is-active {
+  background-color: #FFAD06;
 }
 .session__wrapper--first {
   background-image: url("../../img/background-19.svg");
@@ -391,6 +395,7 @@
   margin: 20px 0 70px;
 }
 .session__colors .color {
+  position: relative;
   width: 65px;
   height: 65px;
   margin: 0 25px;
@@ -398,44 +403,94 @@
 }
 .session__colors .color--blue {
   background-color: #BAE0E9;
+  transition: all 0.2s ease-in-out;
+}
+.session__colors .color--blue.is-active::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -7px;
+  width: 77px;
+  height: 77px;
+  border-radius: 100%;
+  border: 1px solid #FFAD06;
 }
 .session__colors .color--green {
   background-color: #C1D2B0;
+  transition: all 0.2s ease-in-out;
+}
+.session__colors .color--green.is-active::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -7px;
+  width: 77px;
+  height: 77px;
+  border-radius: 100%;
+  border: 1px solid #FFAD06;
 }
 .session__colors .color--brown {
   background-color: #DEC8A7;
+  transition: all 0.2s ease-in-out;
+}
+.session__colors .color--brown.is-active::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -7px;
+  width: 77px;
+  height: 77px;
+  border-radius: 100%;
+  border: 1px solid #FFAD06;
+}
+.session__next-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.session__next-btn.is-active .session__round {
+  position: relative;
+  background-color: #FFAD06;
+  transition: all 0.2s ease-in-out;
+}
+.session__next-btn.is-active .session__round::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid #FFAD06;
+}
+.session__round {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  background-color: #FFFFFF;
 }
 .session__later {
   position: relative;
-  margin: 0px 0 0px 40px;
+  margin: 0px 0 0px 10px;
   font-family: "Montserrat";
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
   color: #FFFFFF;
 }
-.session__later::before {
-  content: "";
-  position: absolute;
-  left: -45px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 32px;
-  height: 32px;
-  border-radius: 100%;
-  background-color: #FFFFFF;
-}
 .session__water-quality-wrapper {
   display: flex;
+  align-items: center;
   margin: 110px 0 90px 0;
 }
 .session__water-quality {
   position: relative;
-  width: 142px;
-  height: 185px;
+  width: 132px;
+  height: 172px;
   margin: 0 6px;
   background-color: #FFFFFF;
   border-radius: 8px;
+  transition: all 0.5s ease-in-out;
 }
 .session__water-quality img {
   position: absolute;
@@ -454,6 +509,34 @@
   line-height: 21px;
   color: #11205E;
   text-align: center;
+}
+.session__water-quality--good.is-active {
+  width: 142px;
+  height: 185px;
+}
+.session__water-quality--good.is-active::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -6px;
+  width: 152px;
+  height: 199px;
+  border-radius: 8px;
+  border: 1px solid #FFAD06;
+}
+.session__water-quality--bad.is-active {
+  width: 142px;
+  height: 185px;
+}
+.session__water-quality--bad.is-active::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -6px;
+  width: 152px;
+  height: 199px;
+  border-radius: 8px;
+  border: 1px solid #FFAD06;
 }
 .session__products-wrapper {
   display: flex;
@@ -486,6 +569,23 @@
   color: #FFFFFF;
   text-align: center;
 }
+.session__products--sunscreen, .session__products--perfume, .session__products--cream, .session__products--cosmetics, .session__products--gas, .session__products--cigaret, .session__products--pesticides, .session__products--paint, .session__products--more {
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+.session__products--sunscreen.is-active, .session__products--perfume.is-active, .session__products--cream.is-active, .session__products--cosmetics.is-active, .session__products--gas.is-active, .session__products--cigaret.is-active, .session__products--pesticides.is-active, .session__products--paint.is-active, .session__products--more.is-active {
+  opacity: 1;
+}
+.session__products--sunscreen.is-active::before, .session__products--perfume.is-active::before, .session__products--cream.is-active::before, .session__products--cosmetics.is-active::before, .session__products--gas.is-active::before, .session__products--cigaret.is-active::before, .session__products--pesticides.is-active::before, .session__products--paint.is-active::before, .session__products--more.is-active::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 11px;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  border: 1px solid #FFAD06;
+}
 .session__frequentations-wrapper {
   display: flex;
   flex-direction: column;
@@ -506,6 +606,7 @@
   margin: 27px 0 54px;
 }
 .session__numbers .short-number {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -520,8 +621,23 @@
   line-height: 22px;
   color: #11205E;
   opacity: 0.4;
+  transition: all 0.2s ease-in-out;
+}
+.session__numbers .short-number--min.is-active, .session__numbers .short-number--max.is-active {
+  opacity: 1;
+}
+.session__numbers .short-number--min.is-active::before, .session__numbers .short-number--max.is-active::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -4px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: 1px solid #FFAD06;
 }
 .session__numbers .long-number {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -536,6 +652,20 @@
   line-height: 22px;
   color: #11205E;
   opacity: 0.4;
+  transition: all 0.2s ease-in-out;
+}
+.session__numbers .long-number--min.is-active, .session__numbers .long-number--max.is-active {
+  opacity: 1;
+}
+.session__numbers .long-number--min.is-active::before, .session__numbers .long-number--max.is-active::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: -7px;
+  width: 95px;
+  height: 65px;
+  border-radius: 38px;
+  border: 1px solid #FFAD06;
 }
 .session__type {
   display: flex;
@@ -544,8 +674,45 @@
   justify-content: center;
   margin: 130px 0 0 0;
 }
+.session__boats .long-number--fishing.is-active, .session__boats .long-number--hobby.is-active, .session__boats .long-number--boat.is-active {
+  opacity: 1;
+}
+.session__boats .long-number--fishing.is-active::before, .session__boats .long-number--hobby.is-active::before, .session__boats .long-number--boat.is-active::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: -7px;
+  width: 95px;
+  height: 65px;
+  border-radius: 38px;
+  border: 1px solid #FFAD06;
+}
 .session__numbers-boats {
+  position: relative;
   width: 100%;
+}
+.session__numbers-boats .session__numbers--min.is-active, .session__numbers-boats .session__numbers--max.is-active {
+  opacity: 1;
+}
+.session__numbers-boats .session__numbers--min.is-active::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -4px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  border: 1px solid #FFAD06;
+}
+.session__numbers-boats .session__numbers--max.is-active::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: -7px;
+  width: 95px;
+  height: 65px;
+  border-radius: 38px;
+  border: 1px solid #FFAD06;
 }
 .session__notes-wrapper {
   display: flex;
