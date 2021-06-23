@@ -174,9 +174,13 @@
   margin: auto;
   background-repeat: no-repeat;
 }
-.subscription__wrapper .yellow-btn {
+.subscription__wrapper .yellow-btn,
+.subscription__wrapper .light-yellow-btn {
   position: absolute;
   bottom: 53px;
+}
+.subscription__wrapper .light-yellow-btn.is-active {
+  background-color: #FFAD06;
 }
 .subscription__wrapper--first {
   background-image: url("../../img/background-5.svg");
@@ -233,6 +237,15 @@
 .subscription__wrapper--seventh.is-active {
   display: flex;
 }
+.subscription__wrapper--seventh .yes,
+.subscription__wrapper--seventh .no {
+  transition: all 0.2s ease-in-out;
+}
+.subscription__wrapper--seventh .yes.is-active,
+.subscription__wrapper--seventh .no.is-active {
+  background-color: #11205E;
+  color: #FFFFFF;
+}
 .subscription__wrapper--eighth {
   display: none;
   background-image: url("../../img/background-16.svg");
@@ -248,6 +261,14 @@
 }
 .subscription__wrapper--nineth.is-active {
   display: flex;
+}
+.subscription__wrapper--nineth .long-grey-btn {
+  margin: 330px 0 37px;
+  transition: all 0.2s ease-in-out;
+}
+.subscription__wrapper--nineth .long-grey-btn.is-active {
+  background-color: #11205E;
+  color: #FFFFFF;
 }
 .subscription__wrapper--tenth {
   display: none;
@@ -363,15 +384,17 @@
 }
 .subscription__gender-wrapper, .subscription__activity-wrapper {
   display: flex;
+  align-items: center;
   margin: 110px 0 90px 0;
 }
 .subscription__gender, .subscription__activity {
   position: relative;
-  width: 142px;
-  height: 185px;
+  width: 132px;
+  height: 172px;
   margin: 0 6px;
   background-color: #FFFFFF;
   border-radius: 8px;
+  transition: all 0.5s ease-in-out;
 }
 .subscription__gender p, .subscription__activity p {
   position: absolute;
@@ -384,25 +407,102 @@
   line-height: 21px;
   color: #11205E;
 }
+.subscription__gender img, .subscription__activity img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 35px;
+}
+.subscription__gender--male.is-active, .subscription__activity--male.is-active {
+  width: 142px;
+  height: 185px;
+}
+.subscription__gender--male.is-active::before, .subscription__activity--male.is-active::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -6px;
+  width: 152px;
+  height: 199px;
+  border-radius: 8px;
+  border: 1px solid #FFAD06;
+}
+.subscription__gender--female.is-active, .subscription__activity--female.is-active {
+  width: 142px;
+  height: 185px;
+}
+.subscription__gender--female.is-active::before, .subscription__activity--female.is-active::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -6px;
+  width: 152px;
+  height: 199px;
+  border-radius: 8px;
+  border: 1px solid #FFAD06;
+}
+.subscription__gender--swim.is-active, .subscription__activity--swim.is-active {
+  width: 142px;
+  height: 185px;
+}
+.subscription__gender--swim.is-active::before, .subscription__activity--swim.is-active::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -6px;
+  width: 152px;
+  height: 199px;
+  border-radius: 8px;
+  border: 1px solid #FFAD06;
+}
+.subscription__gender--surf.is-active, .subscription__activity--surf.is-active {
+  width: 142px;
+  height: 185px;
+}
+.subscription__gender--surf.is-active::before, .subscription__activity--surf.is-active::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -6px;
+  width: 152px;
+  height: 199px;
+  border-radius: 8px;
+  border: 1px solid #FFAD06;
+}
+.subscription__next-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subscription__next-btn.is-active .subscription__round {
+  position: relative;
+  background-color: #FFAD06;
+  transition: all 0.2s ease-in-out;
+}
+.subscription__next-btn.is-active .subscription__round::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid #FFAD06;
+}
+.subscription__round {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  background-color: #FFFFFF;
+}
 .subscription__nogender, .subscription__later {
   position: relative;
-  margin: 0px 0 0px 40px;
+  margin: 0px 0 0px 10px;
   font-family: "Montserrat";
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
   color: #FFFFFF;
-}
-.subscription__nogender::before, .subscription__later::before {
-  content: "";
-  position: absolute;
-  left: -45px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 32px;
-  height: 32px;
-  border-radius: 100%;
-  background-color: #FFFFFF;
 }
 .subscription__picture {
   position: relative;
@@ -416,6 +516,17 @@
   display: flex;
   flex-direction: column;
   margin: 180px 0 60px 0;
+}
+.subscription__level-wrapper .begginner,
+.subscription__level-wrapper .intermediate,
+.subscription__level-wrapper .advanced {
+  transition: all 0.2s ease-in-out;
+}
+.subscription__level-wrapper .begginner.is-active,
+.subscription__level-wrapper .intermediate.is-active,
+.subscription__level-wrapper .advanced.is-active {
+  background-color: #11205E;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=subscription.css.map */

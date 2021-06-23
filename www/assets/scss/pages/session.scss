@@ -27,6 +27,9 @@
 		}
 
 		&--first {
+			background-image: url('../../img/background-19.svg');
+			background-position: bottom;
+
 			&.is-hidden {
 				display: none;
 			}
@@ -34,6 +37,8 @@
 
 		&--second {
 			display: none;
+			background-image: url('../../img/background-20.svg');
+			background-position: bottom;
 
 			&.is-active {
 				display: flex;
@@ -42,6 +47,8 @@
 
 		&--third {
 			display: none;
+			background-image: url('../../img/background-21.svg');
+			background-position: bottom;
 
 			&.is-active {
 				display: flex;
@@ -50,6 +57,8 @@
 
 		&--fourth {
 			display: none;
+			background-image: url('../../img/background-22.svg');
+			background-position: bottom;
 
 			&.is-active {
 				display: flex;
@@ -58,6 +67,8 @@
 
 		&--fifth {
 			display: none;
+			background-image: url('../../img/background-23.svg');
+			background-position: bottom;
 
 			&.is-active {
 				display: flex;
@@ -66,6 +77,8 @@
 
 		&--sixth {
 			display: none;
+			background-image: url('../../img/background-24.svg');
+			background-position: bottom;
 
 			&.is-active {
 				display: flex;

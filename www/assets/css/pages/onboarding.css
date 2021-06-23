@@ -160,11 +160,15 @@
 }
 .onboarding {
   background-color: #274C97;
-  background-image: url("../../img/background.svg");
+  background-image: url("../../img/background-25.svg");
   background-repeat: no-repeat;
+  background-position: bottom;
 }
 .onboarding.is-hidden {
   display: none;
+}
+.onboarding__logo {
+  margin: 165px 0 105px;
 }
 .onboarding__first {
   display: flex;

@@ -7,11 +7,16 @@
 
 .onboarding {
 	background-color: $main-blue;
-	background-image: url('../../img/background.svg');
+	background-image: url('../../img/background-25.svg');
 	background-repeat: no-repeat;
+	background-position: bottom;
 
 	&.is-hidden {
 		display: none;
+	}
+
+	&__logo {
+		margin: 165px 0 105px;
 	}
 
 	&__first {

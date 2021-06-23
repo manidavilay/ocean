@@ -47,11 +47,20 @@
             <h2 class="subscription__subtitle">Lequel <br>êtes-vous ?</h2>
             <img src="./assets/img/yellow-wave.svg" alt="" class="subscription__wave">
             <div class="subscription__gender-wrapper">
-                <div class="subscription__gender"><p>Homme</p></div>
-                <div class="subscription__gender"><p>Femme</p></div>
+                <div class="subscription__gender subscription__gender--male">
+                    <img src="./assets/img/male.svg" alt="">
+                    <p>Homme</p>
+                </div>
+                <div class="subscription__gender subscription__gender--female">
+                    <img src="./assets/img/female.svg" alt="">
+                    <p>Femme</p>
+                </div>
             </div>
-            <p class="subscription__nogender">Je ne souhaite pas le renseigner.</p>
-            <button class="yellow-btn subscription-third-next-btn">Suivant</button>
+            <div class="subscription__next-btn">
+                <div class="subscription__round"></div>
+                <p class="subscription__nogender">Je ne souhaite pas le renseigner.</p>
+            </div>
+            <button class="light-yellow-btn subscription-third-next-btn">Suivant</button>
         </div>
 
         <div class="subscription__wrapper subscription__wrapper--fourth">
@@ -64,8 +73,11 @@
             <div class="subscription__picture">
                 <button class="add-picture-btn"></button>
             </div> 
-            <p class="subscription__later">Ajouter plus tard.</p>
-            <button class="yellow-btn subscription-fourth-next-btn">Suivant</button>
+            <div class="subscription__next-btn">
+                <div class="subscription__round"></div>
+                <p class="subscription__later">Ajouter plus tard.</p>
+            </div>
+            <button class="light-yellow-btn subscription-fourth-next-btn">Suivant</button>
         </div>
 
         <div class="subscription__wrapper subscription__wrapper--fifth">
@@ -76,11 +88,20 @@
             <h2 class="subscription__subtitle">Quelle est votre pratique ?</h2>
             <img src="./assets/img/yellow-wave.svg" alt="" class="subscription__wave"> 
             <div class="subscription__activity-wrapper">
-                <div class="subscription__activity"><p>Natation</p></div>
-                <div class="subscription__activity"><p>Surf</p></div>
+                <div class="subscription__activity subscription__activity--swim">
+                    <img src="./assets/img/swim.svg" alt="">
+                    <p>Natation</p>
+                </div>
+                <div class="subscription__activity subscription__activity--surf">
+                    <img src="./assets/img/surf.svg" alt="">
+                    <p>Surf</p>
+                </div>
             </div>
-            <p class="subscription__later">Je ne souhaite pas le renseigner.</p>
-            <button class="yellow-btn subscription-fifth-next-btn">Suivant</button>
+            <div class="subscription__next-btn">
+                <div class="subscription__round"></div>
+                <p class="subscription__later">Je ne souhaite pas le renseigner.</p>
+            </div>
+            <button class="light-yellow-btn subscription-fifth-next-btn">Suivant</button>
         </div>
 
         <div class="subscription__wrapper subscription__wrapper--sixth">
@@ -91,11 +112,11 @@
             <h2 class="subscription__subtitle">Quel est <br>votre niveau ?</h2>
             <img src="./assets/img/yellow-wave.svg" alt="" class="subscription__wave">
             <div class="subscription__level-wrapper">
-                <button class="long-grey-btn">Débutant</button>
-                <button class="long-grey-btn">Intermédiaire</button>
-                <button class="long-grey-btn">Expérimenté</button>
+                <button class="long-grey-btn begginner">Débutant</button>
+                <button class="long-grey-btn intermediate">Intermédiaire</button>
+                <button class="long-grey-btn advanced">Expérimenté</button>
             </div> 
-            <button class="yellow-btn subscription-sixth-next-btn">Suivant</button>
+            <button class="light-yellow-btn subscription-sixth-next-btn">Suivant</button>
         </div>
 
         <div class="subscription__wrapper subscription__wrapper--seventh">
@@ -106,9 +127,9 @@
             <h2 class="subscription__subtitle">Quel est <br>votre niveau ?</h2>
             <img src="./assets/img/yellow-wave.svg" alt="" class="subscription__wave">
             <p class="subscription__text">Possédez-vous notre capteur maritime ?</p> 
-            <button class="long-grey-btn">Oui</button>
-            <button class="long-grey-btn">Non</button>
-            <button class="yellow-btn subscription-seventh-next-btn">Suivant</button>
+            <button class="long-grey-btn yes">Oui</button>
+            <button class="long-grey-btn no">Non</button>
+            <button class="light-yellow-btn subscription-seventh-next-btn">Suivant</button>
         </div>
 
         <div class="subscription__wrapper subscription__wrapper--eighth">
@@ -121,7 +142,10 @@
             <p class="subscription__text">Renseignez le numéro de série du capteur</p> 
             <input class="subscription__input" type="text" placeholder="556 827 223 776 22" />
             <p class="subscription__small-text">(Il est situé au dos de la pochette du capteur)</p>
-            <p class="subscription__later">Renseigner plus tard.</p>
+            <div class="subscription__next-btn">
+                <div class="subscription__round"></div>
+                <p class="subscription__later">Renseigner plus tard.</p>
+            </div>
             <button class="yellow-btn subscription-eighth-next-btn">Suivant</button>
         </div>
 
@@ -133,8 +157,11 @@
             <h2 class="subscription__subtitle">Montre <br>connectée</h2>
             <img src="./assets/img/yellow-wave.svg" alt="" class="subscription__wave"> 
             <button class="long-grey-btn">Jumeler</button>
-            <p class="subscription__later">Je ne possède pas de montre.</p>
-            <button class="yellow-btn subscription-nineth-next-btn">Suivant</button>
+            <div class="subscription__next-btn">
+                <div class="subscription__round"></div>
+                <p class="subscription__later">Je ne possède pas de montre.</p>
+            </div>
+            <button class="light-yellow-btn subscription-nineth-next-btn">Suivant</button>
         </div>
 
         <div class="subscription__wrapper subscription__wrapper--tenth">

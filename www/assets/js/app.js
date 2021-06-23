@@ -100,6 +100,103 @@ $(document).ready(function () {
 		$('.subscription__wrapper--tenth').addClass('is-active')
 	});
 
+	/* Specific animations */
+	$('.subscription__gender--male').on('click', function() {
+		$('.subscription__gender--male').addClass('is-active')
+		$('.subscription__gender--female').removeClass('is-active')
+		$('.subscription__wrapper--third .subscription__next-btn').removeClass('is-active')
+		$('.subscription__wrapper--third .light-yellow-btn').addClass('is-active')
+	});
+
+	$('.subscription__gender--female').on('click', function() {
+		$('.subscription__gender--female').addClass('is-active')
+		$('.subscription__gender--male').removeClass('is-active')
+		$('.subscription__wrapper--third .subscription__next-btn').removeClass('is-active')
+		$('.subscription__wrapper--third .light-yellow-btn').addClass('is-active')
+	});
+
+	$('.subscription__wrapper--third .subscription__next-btn').on('click', function() {
+		$('.subscription__wrapper--third .subscription__next-btn').addClass('is-active')
+		$('.subscription__gender--male').removeClass('is-active')
+		$('.subscription__wrapper--third .subscription__gender--female').removeClass('is-active')
+		$('.subscription__wrapper--third .light-yellow-btn').addClass('is-active')
+	});
+
+	$('.subscription__wrapper--fourth .subscription__next-btn').on('click', function() {
+		$('.subscription__wrapper--fourth .subscription__next-btn').addClass('is-active')
+		$('.subscription__wrapper--fourth .light-yellow-btn').addClass('is-active')
+	});
+
+	$('.subscription__activity--swim').on('click', function() {
+		$('.subscription__activity--swim').addClass('is-active')
+		$('.subscription__activity--surf').removeClass('is-active')
+		$('.subscription__wrapper--fifth .subscription__next-btn').removeClass('is-active')
+		$('.subscription__wrapper--fifth .light-yellow-btn').addClass('is-active')
+	});
+
+	$('.subscription__activity--surf').on('click', function() {
+		$('.subscription__activity--surf').addClass('is-active')
+		$('.subscription__activity--swim').removeClass('is-active')
+		$('.subscription__wrapper--fifth .subscription__next-btn').removeClass('is-active')
+		$('.subscription__wrapper--fifth .light-yellow-btn').addClass('is-active')
+	})
+
+	$('.subscription__wrapper--fifth .subscription__next-btn').on('click', function() {
+		$('.subscription__wrapper--fifth .subscription__next-btn').addClass('is-active')
+		$('.subscription__activity--swim').removeClass('is-active')
+		$('.subscription__wrapper--fifth .subscription__activity--surf').removeClass('is-active')
+		$('.subscription__wrapper--fifth .light-yellow-btn').addClass('is-active')
+	});
+
+	$('.subscription__wrapper--sixth .begginner').on('click', function() {
+		$('.subscription__wrapper--sixth .begginner').addClass('is-active')
+		$('.subscription__wrapper--sixth .intermediate').removeClass('is-active')
+		$('.subscription__wrapper--sixth .advanced').removeClass('is-active')
+		$('.subscription__wrapper--sixth .light-yellow-btn').addClass('is-active')
+	});
+
+	$('.subscription__wrapper--sixth .intermediate').on('click', function() {
+		$('.subscription__wrapper--sixth .begginner').removeClass('is-active')
+		$('.subscription__wrapper--sixth .intermediate').addClass('is-active')
+		$('.subscription__wrapper--sixth .advanced').removeClass('is-active')
+		$('.subscription__wrapper--sixth .light-yellow-btn').addClass('is-active')
+	});
+
+	$('.subscription__wrapper--sixth .advanced').on('click', function() {
+		$('.subscription__wrapper--sixth .begginner').removeClass('is-active')
+		$('.subscription__wrapper--sixth .intermediate').removeClass('is-active')
+		$('.subscription__wrapper--sixth .advanced').addClass('is-active')
+		$('.subscription__wrapper--sixth .light-yellow-btn').addClass('is-active')
+	});
+
+	$('.subscription__wrapper--seventh .yes').on('click', function() {
+		$('.subscription__wrapper--seventh .yes').addClass('is-active')
+		$('.subscription__wrapper--seventh .no').removeClass('is-active')
+		$('.subscription__wrapper--seventh .light-yellow-btn').addClass('is-active')
+	});
+
+	$('.subscription__wrapper--seventh .no').on('click', function() {
+		$('.subscription__wrapper--seventh .yes').removeClass('is-active')
+		$('.subscription__wrapper--seventh .no').addClass('is-active')
+		$('.subscription__wrapper--seventh .light-yellow-btn').addClass('is-active')
+	});
+
+	$('.subscription__wrapper--eighth .subscription__next-btn').on('click', function() {
+		$('.subscription__wrapper--eighth .subscription__next-btn').addClass('is-active')
+	});
+
+	$('.subscription__wrapper--nineth .long-grey-btn').on('click', function() {
+		$('.subscription__wrapper--nineth .long-grey-btn').addClass('is-active')
+		$('.subscription__wrapper--nineth .subscription__next-btn').removeClass('is-active')
+		$('.subscription__wrapper--nineth .light-yellow-btn').addClass('is-active')
+	});
+
+	$('.subscription__wrapper--nineth .subscription__next-btn').on('click', function() {
+		$('.subscription__wrapper--nineth .long-grey-btn').removeClass('is-active')
+		$('.subscription__wrapper--nineth .subscription__next-btn').addClass('is-active')
+		$('.subscription__wrapper--nineth .light-yellow-btn').addClass('is-active')
+	});
+
 	/* Timer */
 	var timer = new Timer();
 	$('#chronoExample .startButton').click(function () {

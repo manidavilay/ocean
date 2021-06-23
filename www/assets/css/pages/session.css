@@ -196,6 +196,18 @@
   line-height: 22px;
 }
 
+.light-yellow-btn {
+  width: 265px;
+  height: 58px;
+  border-radius: 38px;
+  background-color: #E0D3BB;
+  color: #11205E;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
 .return-btn {
   position: absolute;
   top: 85px;
@@ -263,35 +275,49 @@
   position: absolute;
   bottom: 53px;
 }
+.session__wrapper--first {
+  background-image: url("../../img/background-19.svg");
+  background-position: bottom;
+}
 .session__wrapper--first.is-hidden {
   display: none;
 }
 .session__wrapper--second {
   display: none;
+  background-image: url("../../img/background-20.svg");
+  background-position: bottom;
 }
 .session__wrapper--second.is-active {
   display: flex;
 }
 .session__wrapper--third {
   display: none;
+  background-image: url("../../img/background-21.svg");
+  background-position: bottom;
 }
 .session__wrapper--third.is-active {
   display: flex;
 }
 .session__wrapper--fourth {
   display: none;
+  background-image: url("../../img/background-22.svg");
+  background-position: bottom;
 }
 .session__wrapper--fourth.is-active {
   display: flex;
 }
 .session__wrapper--fifth {
   display: none;
+  background-image: url("../../img/background-23.svg");
+  background-position: bottom;
 }
 .session__wrapper--fifth.is-active {
   display: flex;
 }
 .session__wrapper--sixth {
   display: none;
+  background-image: url("../../img/background-24.svg");
+  background-position: bottom;
 }
 .session__wrapper--sixth.is-active {
   display: flex;
