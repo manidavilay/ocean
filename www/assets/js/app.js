@@ -11,7 +11,8 @@ $(document).ready(function () {
 		slidesToScroll: 1,
 		arrows: false,
 		dots: true,
-		autoPlay: false
+		autoPlay: false,
+		infinite: false
 	});
 
 	/* Subscription form */
@@ -478,4 +479,10 @@ $(document).ready(function () {
 		$('.session__wrapper--sixth').addClass('is-active')
 		$('.session__wrapper--seventh').removeClass('is-active')
 	});
+
+	/* End form */
+	$('.js-end-recap-btn').on('click', function() {
+		$('.recap__wrapper--first').addClass('is-hidden')
+		$('.recap__wrapper--second').addClass('is-active')	
+	})
 });

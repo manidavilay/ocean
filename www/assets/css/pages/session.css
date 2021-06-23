@@ -196,6 +196,18 @@
   line-height: 22px;
 }
 
+.dark-blue-btn {
+  width: 265px;
+  height: 58px;
+  border-radius: 38px;
+  background-color: #11205E;
+  color: #FFFFFF;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
 .light-yellow-btn {
   width: 265px;
   height: 58px;

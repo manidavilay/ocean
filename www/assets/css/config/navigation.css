@@ -1,4 +1,7 @@
 /* ---------------------- */
+/*       NAVIGATION       */
+/* ---------------------- */
+/* ---------------------- */
 /*         BUTTONS        */
 /* ---------------------- */
 /* ----------------------------- *
@@ -259,4 +262,45 @@
   line-height: 22px;
 }
 
-/*# sourceMappingURL=buttons.css.map */
+/* ----------------------------- *
+ *           VARIABLES           *
+ * ----------------------------- */
+/* ---------- FONTS ---------- */
+/* ---------- COLORS ---------- */
+.navigation {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 75px;
+  background-color: #FFFFFF;
+  border-top: 1px solid #E5E5E5;
+}
+.navigation__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 75px;
+  height: 100%;
+  border-right: 1px solid #f0f0f0;
+}
+.navigation__item img {
+  width: 23px;
+  height: 23px;
+  margin: 5px 0 0 0;
+}
+.navigation__item p {
+  margin: 5px 0 0 0;
+  font-family: "Montserrat";
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #274C97;
+}
+.navigation__item--calendar {
+  background-color: #11205E;
+}
+
+/*# sourceMappingURL=navigation.css.map */

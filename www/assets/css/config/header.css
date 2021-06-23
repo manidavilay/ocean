@@ -1,4 +1,7 @@
 /* ---------------------- */
+/*         HEADER         */
+/* ---------------------- */
+/* ---------------------- */
 /*         BUTTONS        */
 /* ---------------------- */
 /* ----------------------------- *
@@ -259,4 +262,35 @@
   line-height: 22px;
 }
 
-/*# sourceMappingURL=buttons.css.map */
+/* ----------------------------- *
+ *           VARIABLES           *
+ * ----------------------------- */
+/* ---------- FONTS ---------- */
+/* ---------- COLORS ---------- */
+.header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 78px;
+  background-color: #FFFFFF;
+  z-index: 10;
+}
+.header__account {
+  width: 46px;
+  height: 46px;
+  border-radius: 100%;
+  background-color: #274C97;
+}
+.header__title {
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  color: #11205E;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=header.css.map */
