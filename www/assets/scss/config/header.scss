@@ -16,6 +16,10 @@
     background-color: $white;
     z-index: 10;
 
+    &.is-hidden {
+        display: none;
+    }
+
     &__account {
         width: 46px;
         height: 46px;

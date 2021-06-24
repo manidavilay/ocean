@@ -15,6 +15,10 @@
     background-color: $white;
     border-top: 1px solid $grey;
 
+    &.is-hidden {
+        display: none;
+    }
+
     &__item {
         display: flex;
         flex-direction: column;
@@ -37,10 +41,6 @@
             font-weight: $fw-semibold;
             line-height: 22px;
             color: $main-blue;
-        }
-
-        &--calendar {
-            background-color: $dark-blue;
         }
     }
 }

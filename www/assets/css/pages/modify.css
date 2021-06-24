@@ -1,5 +1,5 @@
 /* ---------------------- */
-/*          RECAP         */
+/*         MODIFY         */
 /* ---------------------- */
 /* ---------------------- */
 /*         BUTTONS        */
@@ -279,38 +279,43 @@
  * ----------------------------- */
 /* ---------- FONTS ---------- */
 /* ---------- COLORS ---------- */
-.recap {
+.modify {
   width: 100%;
-  background-color: #FFFFFF;
 }
-.recap__wrapper {
+.modify__wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   width: 100%;
-  height: 100%;
-  margin: 98px auto 130px;
+  height: 79vh;
+  margin: 98px auto 0;
   overflow-y: scroll;
+  background-color: #FFFFFF;
+  background-image: url("../../img/background-28.svg");
+  background-repeat: no-repeat;
+  background-position: top;
 }
-.recap__wrapper--first.is-hidden {
+.modify__wrapper--first.is-hidden {
   display: none;
 }
-.recap__wrapper--second {
+.modify__wrapper--second {
   display: none;
-  height: 670px;
-  margin: 78px auto 0;
-  background-image: url(../../img/background-26.svg);
 }
-.recap__wrapper--second.is-active {
+.modify__wrapper--second.is-active {
   display: flex;
 }
-.recap__wrapper--second .yellow-btn {
-  margin: 40px 0 25px;
+.modify__left-arrow {
+  position: absolute;
+  top: 40px;
+  left: 20px;
 }
-.recap__title {
-  margin: 20px 0 30px 0;
+.modify__wave {
+  margin: 120px 0 0 0;
+}
+.modify__title {
+  position: absolute;
+  top: 20px;
   font-family: "Montserrat";
   font-weight: 600;
   font-size: 30px;
@@ -318,342 +323,84 @@
   color: #274C97;
   text-align: center;
 }
-.recap__subtitle {
-  font-family: "Montserrat";
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 25px;
-  color: #11205E;
-}
-.recap__modify-link {
+.modify__date-wrapper {
+  margin: 10px 0 20px;
   font-family: "Montserrat";
   font-weight: 400;
-  font-size: 12px;
-  line-height: 20px;
-  text-decoration: underline;
-}
-.recap__forecast {
-  display: flex;
-  flex-direction: column;
-  width: 85%;
-  margin: 55px 0 0 0;
-}
-.recap__forecast .forecast__top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 0 17px 0;
-}
-.recap__forecast .forecast__bottom {
-  width: 318px;
-  height: 252px;
-  background-color: #274C97;
-  border-radius: 25px;
-}
-.recap__forecast .forecast__bottom .top {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 30px 0 0 0;
-}
-.recap__forecast .forecast__bottom .top__main-info {
-  margin: 0 0 20px 0;
-}
-.recap__forecast .forecast__bottom .top__main-info:last-of-type {
-  margin: -4px 0 24px 0px;
-}
-.recap__forecast .forecast__bottom .top__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: calc(100%/3 - 10px);
-  height: 105px;
-  margin: 0 5px;
-}
-.recap__forecast .forecast__bottom .top__item p {
-  font-family: "Montserrat";
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 20px;
-  color: #FFFFFF;
-}
-.recap__forecast .forecast__bottom .top__item:first-of-type .top__arrow {
-  margin: 0 0 4px 0;
-}
-.recap__forecast .forecast__bottom .top__item:nth-of-type(2) .top__arrow {
-  margin: 7px 0 21px 0px;
-  transform: rotate(85deg);
-}
-.recap__forecast .forecast__bottom .top__details {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-.recap__forecast .forecast__bottom .top__details img {
-  margin: 0 10px 0 0;
-}
-.recap__forecast .forecast__bottom .bottom {
-  display: flex;
-  justify-content: center;
-  margin: 25px 0 0 0;
-}
-.recap__forecast .forecast__bottom .bottom__localisation {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 234px;
-  height: 52px;
-  border: 1px solid #FFFFFF;
-  border-radius: 100px;
-}
-.recap__forecast .forecast__bottom .bottom__localisation img {
-  margin: 0 15px 0 0;
-}
-.recap__forecast .forecast__bottom .bottom__localisation p {
-  font-family: "Montserrat";
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 15px;
-  color: #FFFFFF;
-}
-.recap__forecast .yellow-wave {
-  margin: 17px auto 0;
-}
-.recap__timer {
-  display: flex;
-  flex-direction: column;
-  width: 85%;
-  margin: 45px 0 0 0;
-}
-.recap__timer .timer__top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 0 17px 0;
-}
-.recap__timer .timer__bottom {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 318px;
-  height: 129px;
-  background-color: #274C97;
-  border-radius: 25px;
-  font-family: "Montserrat";
-  font-weight: 600;
-  font-size: 55px;
-  line-height: 55px;
-  color: #FFFFFF;
-}
-.recap__timer .yellow-wave {
-  margin: 17px auto 0;
-}
-.recap__water {
-  display: flex;
-  flex-direction: column;
-  width: 85%;
-  margin: 55px 0 0 0;
-}
-.recap__water .water__top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 0 17px 0;
-}
-.recap__water .water__bottom {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 318px;
-  height: 129px;
-  background-color: #274C97;
-  border-radius: 25px;
-  font-family: "Montserrat";
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 15px;
-  color: #FFFFFF;
-  text-align: center;
-}
-.recap__water .water__color {
-  width: 60px;
-  height: 60px;
-  border-radius: 100%;
-}
-.recap__water .water__color--clean {
-  background-color: #BAE0E9;
-}
-.recap__water .water__color--dirty {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #FFFFFF;
-}
-.recap__water .water__color--dirty img {
-  width: 26px;
-}
-.recap__water .water__clean, .recap__water .water__dirty {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.recap__water .water__clean p, .recap__water .water__dirty p {
-  margin: 10px 0 0 0;
-}
-.recap__water .yellow-wave {
-  margin: 17px auto 0;
-}
-.recap__products {
-  display: flex;
-  flex-direction: column;
-  width: 85%;
-  margin: 45px 0 0 0;
-}
-.recap__products .products__top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 0 17px 0;
-}
-.recap__products .products__bottom {
-  display: flex;
-  justify-content: space-between;
-}
-.recap__products .products__bottom .product {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  width: 94px;
-  height: 158px;
-  padding: 30px 0 0 0;
-  border-radius: 25px;
-  background-color: #274C97;
-}
-.recap__products .products__bottom .product__item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 60px;
-  height: 60px;
-  border-radius: 100%;
-  background-color: #FFFFFF;
-}
-.recap__products .products__bottom .product p {
-  margin: 10px 0 0 0;
-  font-family: "Montserrat";
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 15px;
-  color: #FFFFFF;
-  text-align: center;
-}
-.recap__products .yellow-wave {
-  margin: 17px auto 0;
-}
-.recap__frequentations {
-  display: flex;
-  flex-direction: column;
-  width: 85%;
-  margin: 45px 0 0 0;
-}
-.recap__frequentations .frequentations__top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 0 17px 0;
-}
-.recap__frequentations .frequentations__bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.recap__frequentations .frequentations__numbers {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: auto;
-  margin: 0 0 13px 0;
-  padding: 13px 0;
-  background-color: #274C97;
-  border-radius: 100px;
-  font-family: "Montserrat";
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 15px;
-  color: #FFFFFF;
-  text-align: center;
-}
-.recap__frequentations .yellow-wave {
-  margin: 17px auto 0;
-}
-.recap__notes {
-  display: flex;
-  flex-direction: column;
-  width: 85%;
-  margin: 45px 0 55px 0;
-}
-.recap__notes .notes__top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 0 17px 0;
-}
-.recap__notes .notes__bottom {
-  width: 318px;
-  height: 63px;
-  background-color: #F0F0F9;
-  border-radius: 8px;
-}
-.recap__ending-title {
-  font-family: "Montserrat";
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 45px;
   color: #274C97;
   text-align: center;
+  line-height: 135%;
 }
-.recap .blue-wave {
-  margin: 40px 0 30px;
+.modify__date-wrapper .date-small {
+  margin: 30px 0;
+  font-size: 20px;
+  opacity: 0.5;
 }
-.recap__ending {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 318px;
-  height: 252px;
-  background-color: #274C97;
-  border-radius: 25px;
+.modify__date-wrapper .date-small span {
+  margin: 0 40px;
 }
-.recap__ending h3 {
-  margin: 0 0 20px 0;
-  font-family: "Montserrat";
-  font-weight: 600;
-  font-size: 25px;
-  line-height: 30px;
-  color: #FFFFFF;
-  text-align: center;
+.modify__date-wrapper .date-medium {
+  margin: 30px 0;
+  font-size: 22px;
+  opacity: 0.5;
 }
-.recap__ending p {
+.modify__date-wrapper .date-medium span {
+  margin: 0 50px;
+}
+.modify__date-wrapper .date-large {
+  margin: 30px 0;
+  background-color: #F0F0F9;
+  border-radius: 10px;
+  padding: 17px;
+  font-size: 30px;
+  opacity: 1;
+}
+.modify__date-wrapper .date-large span {
+  margin: 0 60px;
+}
+.modify .yellow-btn {
+  margin: 0 0 23px 0;
+}
+.modify__hours-wrapper {
+  margin: 10px 0 20px;
   font-family: "Montserrat";
   font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-  color: #FFFFFF;
+  color: #274C97;
   text-align: center;
+  line-height: 135%;
 }
-.recap .navigation__calendar {
-  background-color: #11205E;
+.modify__hours-wrapper .date-small {
+  margin: 30px 0;
+  font-size: 20px;
+  opacity: 0.5;
 }
-.recap .navigation__item--record {
+.modify__hours-wrapper .date-small span {
+  margin: 0 40px;
+}
+.modify__hours-wrapper .date-medium {
+  margin: 30px 0;
+  font-size: 22px;
+  opacity: 0.5;
+}
+.modify__hours-wrapper .date-medium span {
+  margin: 0 50px;
+}
+.modify__hours-wrapper .date-large {
+  margin: 30px 0;
+  background-color: #F0F0F9;
+  border-radius: 10px;
+  padding: 17px;
+  font-size: 20px;
+  opacity: 1;
+}
+.modify__hours-wrapper .date-large span {
+  margin: 0 60px;
+}
+.modify .navigation__item--record {
   background-color: #274C97;
 }
-.recap .navigation__item--record p {
+.modify .navigation__item--record p {
   color: #FFFFFF;
 }
 
-/*# sourceMappingURL=recap.css.map */
+/*# sourceMappingURL=modify.css.map */

@@ -188,7 +188,19 @@
   width: 265px;
   height: 58px;
   border-radius: 38px;
-  background-color: #FFAD06;
+  background-color: #FF9933;
+  color: #11205E;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.white-btn {
+  width: 265px;
+  height: 58px;
+  border-radius: 38px;
+  background-color: #FFFFFF;
   color: #11205E;
   font-family: "Montserrat";
   font-weight: 400;
@@ -289,7 +301,7 @@
   bottom: 53px;
 }
 .session__wrapper .light-yellow-btn.is-active {
-  background-color: #FFAD06;
+  background-color: #FF9933;
 }
 .session__wrapper--first {
   background-image: url("../../img/background-19.svg");
@@ -358,7 +370,7 @@
 .session__progression-bar .progression {
   height: 9px;
   border-radius: 9px;
-  background-color: #FFAD06;
+  background-color: #FF9933;
 }
 .session__progression-bar .progression--first {
   width: 17px;
@@ -425,7 +437,7 @@
   width: 77px;
   height: 77px;
   border-radius: 100%;
-  border: 1px solid #FFAD06;
+  border: 1px solid #FF9933;
 }
 .session__colors .color--green {
   background-color: #C1D2B0;
@@ -439,7 +451,7 @@
   width: 77px;
   height: 77px;
   border-radius: 100%;
-  border: 1px solid #FFAD06;
+  border: 1px solid #FF9933;
 }
 .session__colors .color--brown {
   background-color: #DEC8A7;
@@ -453,7 +465,7 @@
   width: 77px;
   height: 77px;
   border-radius: 100%;
-  border: 1px solid #FFAD06;
+  border: 1px solid #FF9933;
 }
 .session__next-btn {
   display: flex;
@@ -462,7 +474,7 @@
 }
 .session__next-btn.is-active .session__round {
   position: relative;
-  background-color: #FFAD06;
+  background-color: #FF9933;
   transition: all 0.2s ease-in-out;
 }
 .session__next-btn.is-active .session__round::before {
@@ -473,7 +485,7 @@
   width: 40px;
   height: 40px;
   border-radius: 100%;
-  border: 1px solid #FFAD06;
+  border: 1px solid #FF9933;
 }
 .session__round {
   width: 32px;
@@ -534,7 +546,7 @@
   width: 152px;
   height: 199px;
   border-radius: 8px;
-  border: 1px solid #FFAD06;
+  border: 1px solid #FF9933;
 }
 .session__water-quality--bad.is-active {
   width: 142px;
@@ -548,7 +560,7 @@
   width: 152px;
   height: 199px;
   border-radius: 8px;
-  border: 1px solid #FFAD06;
+  border: 1px solid #FF9933;
 }
 .session__products-wrapper {
   display: flex;
@@ -596,7 +608,7 @@
   width: 70px;
   height: 70px;
   border-radius: 100%;
-  border: 1px solid #FFAD06;
+  border: 1px solid #FF9933;
 }
 .session__frequentations-wrapper {
   display: flex;
@@ -646,7 +658,7 @@
   width: 60px;
   height: 60px;
   border-radius: 100%;
-  border: 1px solid #FFAD06;
+  border: 1px solid #FF9933;
 }
 .session__numbers .long-number {
   position: relative;
@@ -677,7 +689,7 @@
   width: 95px;
   height: 65px;
   border-radius: 38px;
-  border: 1px solid #FFAD06;
+  border: 1px solid #FF9933;
 }
 .session__type {
   display: flex;
@@ -697,7 +709,7 @@
   width: 95px;
   height: 65px;
   border-radius: 38px;
-  border: 1px solid #FFAD06;
+  border: 1px solid #FF9933;
 }
 .session__numbers-boats {
   position: relative;
@@ -714,7 +726,7 @@
   width: 60px;
   height: 60px;
   border-radius: 100%;
-  border: 1px solid #FFAD06;
+  border: 1px solid #FF9933;
 }
 .session__numbers-boats .session__numbers--max.is-active::before {
   content: "";
@@ -724,7 +736,7 @@
   width: 95px;
   height: 65px;
   border-radius: 38px;
-  border: 1px solid #FFAD06;
+  border: 1px solid #FF9933;
 }
 .session__notes-wrapper {
   display: flex;

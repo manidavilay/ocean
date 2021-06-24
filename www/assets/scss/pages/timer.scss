@@ -1,0 +1,167 @@
+/* ---------------------- */
+/*          TIMER         */
+/* ---------------------- */
+
+@import '../config/buttons.scss';
+@import '../config/variables.scss';
+
+.timer {
+    width: 100%;
+
+    &__wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 79vh;
+        margin: 98px auto 0;
+        overflow-y: scroll;
+        background-color: $white-beige;
+
+        &.is-active {
+            height: 812px;
+            margin: auto;
+            background-color: $main-blue;
+        }
+    }
+
+    &__localisation {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 252px;
+        height: 52px;
+        margin: 102px 0;
+        border-radius: 100px;
+        border: 1px solid $dark-blue;
+        font-family: 'Montserrat';
+        font-weight: $fw-regular;
+        font-size: 14px;
+        line-height: 20px;
+        color: $dark-blue;
+
+        &.is-active {
+            margin: 192px 0 102px;
+            border: 1px solid $white;
+            color: $white;
+        }
+
+        img {
+            margin: 0 15px 0 0;
+        }
+    }
+    
+    &__white-geoloc {
+        display: none;
+
+        &.is-active {
+            display: block;
+        }
+    }
+
+    &__blue-geoloc {
+        &.is-hidden {
+            display: none;
+        }
+    }
+
+    &__title {
+        margin: 0 0 20px 0;
+        font-family: 'Montserrat';
+        font-weight: $fw-regular;
+        font-size: 18px;
+        line-height: 22px;
+        color: $dark-blue;
+        text-transform: uppercase;
+
+        &.is-active {
+            color: $white;
+        }
+    }
+
+    &__chronoForm {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__chrono {
+        margin: 0 0 70px 0;
+        font-family: 'Montserrat';
+        font-weight: $fw-semibold;
+        font-size: 55px;
+        line-height: 55px;
+        letter-spacing: 10px;
+        color: $dark-blue;
+
+        &.is-active {
+            color: $white;
+        }
+    }
+
+    &__start,
+    &__reset {
+        border: 0;
+    }
+
+    &__start {
+        &.is-changed {
+            position: relative;
+            width: 85px;
+            height: 85px;
+            border-radius: 100%;
+            background-image: url('../../img/white-square.svg');
+            background-size: 25px;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &.is-active {
+            background-color: $white;
+        }
+    }
+
+    &__reset {
+        display: none;
+        margin: 20px 0 0 0;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-weight: $fw-light;
+        line-height: 22px;
+        color: $white;
+        text-decoration: underline;
+        background: none;
+
+        &.is-active {
+            display: block;
+        }
+    }
+
+    &__stop {
+        display: none;
+        border: none;
+        margin: 20px 0 0 0;
+
+        &.is-active {
+            display: block;
+        }
+    }
+
+    &__manually {
+        margin: 20px 0 0 0;
+
+        &.is-hidden {
+            display: none;
+        }
+    }
+
+    .navigation {
+        &__item--record {
+            background-color: $main-blue;
+            
+            p {
+                color: $white;
+            }
+        }
+    }
+}

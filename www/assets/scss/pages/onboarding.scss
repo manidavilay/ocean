@@ -42,9 +42,35 @@
 	}
 
 	&__image {
-		width: 200px;
-		height: 340px;
-		margin: 50px 0 60px;
+		&--first {
+			width: 317px;
+			height: 317px;
+			margin: 50px 0 60px;
+			border-radius: 30px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-image: url('../../img/onboarding-visual.jpg');
+		}
+
+		&--second {
+			width: 317px;
+			height: 317px;
+			margin: 50px 0 60px;
+			border-radius: 30px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-image: url('../../img/onboarding-visual-2.jpg');
+		}
+
+		&--third {
+			width: 317px;
+			height: 317px;
+			margin: 50px 0 60px;
+			border-radius: 30px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-image: url('../../img/onboarding-visual-3.jpg');
+		}
 	}
 
 	&__text {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,25 +8,164 @@
     <link rel="stylesheet" href="./assets/css/config/reset.css" type="text/css">
     <link rel="stylesheet" href="./assets/css/config/fonts.css" type="text/css">
     <link rel="stylesheet" href="./assets/css/config/variables.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/config/header.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/config/navigation.css" type="text/css">
     <link rel="stylesheet" href="./assets/css/pages/timer.css" type="text/css">
     <title>Ocean</title>
 </head>
+
 <body>
-    <div>
-        <p>Timer</p>
-        <div id="chronoExample">
-            <div class="values">00:00:00</div>
-            <div>
-                <button class="startButton yellow-btn">Start</button>
-                <button class="pauseButton" >Pause</button>
-                <button class="stopButton">Stop</button>
-                <button class="resetButton">Reset</button>
+    <div class="timer">
+        <header class="header">
+            <button class="header__account">
+                <img src="./assets/img/account-bis.svg" alt="">
+            </button>
+            <h1 class="header__title">Enregistrer</h1>
+            <button class="header__settings">
+                <img src="./assets/img/settings.svg" alt="">
+            </button>
+        </header>
+
+        <div class="timer__wrapper">
+            <div class="timer__localisation">
+                <img class="timer__white-geoloc" src="./assets/img/geoloc.svg" alt="">
+                <img class="timer__blue-geoloc" src="./assets/img/blue-geoloc.svg" alt="">
+                <p>La Grande Plage, 64200</p>
+            </div>
+            <h1 class="timer__title">Timer</h1>
+            <span class="timer__chrono" id="chronotime">0:00:00</span>
+            <form class="timer__chronoForm" name="chronoForm">
+                <input class="timer__start yellow-btn" type="button" name="startstop" value="Démarrer ma session" onClick="chronoStart()" />
+                <a href="info.html"><input class="timer__stop yellow-btn" type="button" value="Terminer ma session" /></a>
+                <input class="timer__reset" type="button" name="reset" value="Réinitialiser" onClick="chronoReset()" />
+            </form>
+            <a href="modify.html"><button class="dark-blue-btn timer__manually">Saisir manuellement</button></a>
+        </div>
+
+        <div class="navigation">
+            <div class="navigation__item navigation__item--map">
+                <img src="./assets/img/map.svg" alt="">
+                <p>Explorer</p>
+            </div>
+            <div class="navigation__item navigation__item--forecast">
+                <img src="./assets/img/forecast.svg" alt="">
+                <p>Prévisions</p>
+            </div>
+            <div class="navigation__item navigation__item--record">
+                <img src="./assets/img/yellow-record.svg" alt="">
+                <p>Session</p>
+            </div>
+            <div class="navigation__item navigation__item--calendar">
+                <img src="./assets/img/calendar.svg" alt="">
+                <p>Agenda</p>
+            </div>
+            <div class="navigation__item navigation__item--account">
+                <img src="./assets/img/account.svg" alt="">
+                <p>Profil</p>
             </div>
         </div>
     </div>
     <script src="./assets/js/lib/jquery.min.js"></script>
     <script type="text/javascript" src="./assets/js/lib/slick.min.js"></script>
-    <script src="./assets/js/lib/easytimer.min.js"></script>
     <script src="./assets/js/app.js"></script>
+    <script>
+        var startTime = 0
+        var start = 0
+        var end = 0
+        var diff = 0
+        var timerID = 0
+    
+        function chrono() {
+            end = new Date()
+            diff = end - start
+            diff = new Date(diff)
+            var msec = diff.getMilliseconds()
+            var sec = diff.getSeconds()
+            var min = diff.getMinutes()
+            var hr = diff.getHours() - 1
+            if (min < 10) {
+                min = "0" + min
+            }
+            if (sec < 10) {
+                sec = "0" + sec
+            }
+            if (msec < 10) {
+                msec = "00" + msec
+            } else if (msec < 100) {
+                msec = "0" + msec
+            }
+            document.getElementById("chronotime").innerHTML = hr + ":" + min + ":" + sec
+            timerID = setTimeout("chrono()", 10)
+        }
+    
+        function chronoStart() {
+            document.chronoForm.startstop.value = ""
+            document.chronoForm.startstop.onclick = chronoStop
+            document.chronoForm.reset.onclick = chronoReset
+            start = new Date()
+            chrono()
+            $('.timer__start').addClass('is-changed')
+            $('.timer__wrapper').addClass('is-active')
+            $('.timer__localisation').addClass('is-active')
+            $('.timer__white-geoloc').addClass('is-active')
+            $('.timer__blue-geoloc').addClass('is-hidden')
+            $('.timer__title').addClass('is-active')
+            $('.timer__chrono').addClass('is-active')
+            $('.timer__manually').addClass('is-hidden')
+            $('.header').addClass('is-hidden')
+            $('.navigation').addClass('is-hidden')
+        }
+    
+        function chronoContinue() {
+            document.chronoForm.startstop.value = ""
+            document.chronoForm.startstop.onclick = chronoStop
+            document.chronoForm.reset.onclick = chronoReset
+            start = new Date() - diff
+            start = new Date(start)
+            chrono()
+            $('.timer__start').addClass('is-changed')
+            $('.timer__start').removeClass('is-active')
+            $('.timer__wrapper').addClass('is-active')
+            $('.timer__reset').removeClass('is-active')
+            $('.timer__stop').removeClass('is-active')
+            $('.header').addClass('is-hidden')
+            $('.navigation').addClass('is-hidden')
+        }
+    
+        function chronoReset() {
+            document.getElementById("chronotime").innerHTML = "0:00:00"
+            start = new Date()
+        }
+        
+        function chronoStopReset() {
+            document.chronoForm.startstop.value = "Démarrer ma session"
+            document.getElementById("chronotime").innerHTML = "0:00:00"
+            document.chronoForm.startstop.onclick = chronoStart
+            $('.timer__wrapper').removeClass('is-active')
+            $('.timer__localisation').removeClass('is-active')
+            $('.timer__white-geoloc').removeClass('is-active')
+            $('.timer__blue-geoloc').removeClass('is-hidden')
+            $('.timer__title').removeClass('is-active')
+            $('.timer__chrono').removeClass('is-active')
+            $('.timer__start').removeClass('is-active')
+            $('.timer__reset').removeClass('is-active')
+            $('.timer__stop').removeClass('is-active')
+            $('.timer__manually').removeClass('is-hidden')
+        }
+    
+        function chronoStop() {
+            document.chronoForm.startstop.value = "Reprendre"
+            document.chronoForm.startstop.onclick = chronoContinue
+            document.chronoForm.reset.onclick = chronoStopReset
+            clearTimeout(timerID)
+            $('.timer__start').removeClass('is-changed')
+            $('.timer__start').addClass('is-active')
+            $('.timer__reset').addClass('is-active')
+            $('.timer__stop').addClass('is-active')
+            $('.header').removeClass('is-hidden')
+            $('.navigation').removeClass('is-hidden')
+        }
+    </script>
 </body>
+
 </html>

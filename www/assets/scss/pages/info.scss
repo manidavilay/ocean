@@ -1,0 +1,63 @@
+/* ---------------------- */
+/*           INFO         */
+/* ---------------------- */
+
+@import '../config/buttons.scss';
+@import '../config/variables.scss';
+
+.info {
+    width: 100%;
+
+    &__wrapper {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 91vh;
+        margin: 78px auto 0;
+        overflow-y: scroll;
+        background-color: $main-blue;
+        background-image: url('../../img/background-27.svg');
+        background-repeat: no-repeat;
+    }
+
+    &__visual {
+        margin: 100px 0 30px 0;
+        border-radius: 30px;
+    }
+
+    &__title {
+        margin: 0 0 20px 0;
+        font-family: 'Montserrat';
+        font-weight: $fw-semibold;
+        font-size: 25px;
+        line-height: 30px;
+        color: $white;
+        text-align: center;
+    }
+
+    &__text {
+        width: 75%;
+        margin: 0 0 30px 0;
+        font-family: 'Montserrat';
+        font-weight: $fw-regular;
+        font-size: 16px;
+        line-height: 21px;
+        color: $white;
+        text-align: center; 
+    }
+
+    .yellow-btn {
+        margin: 0 0 20px 0;
+    }
+
+    &__btn {
+        font-family: 'Montserrat';
+        font-size: 14px;
+        font-weight: $fw-light;
+        line-height: 22px;
+        color: $white;
+        text-decoration: underline;
+    }
+}

@@ -449,4 +449,18 @@
             text-align: center; 
         }
     }
+
+    .navigation {
+        &__calendar {
+            background-color: $dark-blue;
+        }
+
+        &__item--record {
+            background-color: $main-blue;
+            
+            p {
+                color: $white;
+            }
+        }
+    }
 }

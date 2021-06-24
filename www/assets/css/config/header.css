@@ -188,7 +188,19 @@
   width: 265px;
   height: 58px;
   border-radius: 38px;
-  background-color: #FFAD06;
+  background-color: #FF9933;
+  color: #11205E;
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.white-btn {
+  width: 265px;
+  height: 58px;
+  border-radius: 38px;
+  background-color: #FFFFFF;
   color: #11205E;
   font-family: "Montserrat";
   font-weight: 400;
@@ -277,6 +289,9 @@
   height: 78px;
   background-color: #FFFFFF;
   z-index: 10;
+}
+.header.is-hidden {
+  display: none;
 }
 .header__account {
   width: 46px;
