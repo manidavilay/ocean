@@ -36,6 +36,7 @@
 		&--first {
 			background-image: url('../../img/background-5.svg');
 			background-position: bottom;
+			background-size: contain;
 
 			&.is-hidden {
 				display: none;
@@ -46,6 +47,7 @@
 			display: none;
 			background-image: url('../../img/background-11.svg');
 			background-position: bottom;
+			background-size: contain;
 
 			&.is-active {
 				display: flex;
@@ -56,6 +58,7 @@
 			display: none;
 			background-image: url('../../img/background-12.svg');
 			background-position: bottom;
+			background-size: contain;
 
 			&.is-active {
 				display: flex;
@@ -66,6 +69,7 @@
 			display: none;
 			background-image: url('../../img/background-13.svg');
 			background-position: bottom;
+			background-size: contain;
 
 			&.is-active {
 				display: flex;
@@ -76,6 +80,7 @@
 			display: none;
 			background-image: url('../../img/background-10.svg');
 			background-position: center 100px;
+			background-size: contain;
 
 			&.is-active {
 				display: flex;
@@ -86,6 +91,7 @@
 			display: none;
 			background-image: url('../../img/background-14.svg');
 			background-position: bottom;
+			background-size: contain;
 
 			&.is-active {
 				display: flex;
@@ -96,6 +102,7 @@
 			display: none;
 			background-image: url('../../img/background-15.svg');
 			background-position: bottom;
+			background-size: contain;
 
 			&.is-active {
 				display: flex;
@@ -116,6 +123,7 @@
 			display: none;
 			background-image: url('../../img/background-16.svg');
 			background-position: bottom;
+			background-size: contain;
 
 			&.is-active {
 				display: flex;
@@ -126,6 +134,7 @@
 			display: none;
 			background-image: url('../../img/background-9.svg');
 			background-position: bottom left;
+			background-size: contain;
 
 			&.is-active {
 				display: flex;
@@ -150,6 +159,7 @@
 			display: none;
 			background-image: url('../../img/background-17.svg');
 			background-position: bottom left;
+			background-size: contain;
 
 			&.is-active {
 				display: flex;
@@ -251,7 +261,7 @@
         line-height: 135%;
 
         .date-small {
-            margin: 30px 0;
+            margin: 40px 0;
             font-size: 20px;
             opacity: 0.5;
 
@@ -261,7 +271,7 @@
         }
 
         .date-medium {
-            margin: 30px 0;
+            margin: 40px 0;
             font-size: 22px;
             opacity: 0.5;
 
@@ -271,7 +281,7 @@
         }
 
         .date-large {
-            margin: 30px 0;
+            margin: 40px 0;
             background-color: $dark-blue;
             border-radius: 10px;
             padding: 17px;

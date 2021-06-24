@@ -10,6 +10,7 @@
 	background-image: url('../../img/background-25.svg');
 	background-repeat: no-repeat;
 	background-position: bottom;
+	background-size: cover;
 
 	&.is-hidden {
 		display: none;
@@ -125,7 +126,7 @@
 
 		.slick-dots {
 			position: absolute;
-			bottom: 140px;
+			bottom: 170px;
 			left: 50%;
 			transform: translateX(-50%);
 			display: flex;
@@ -152,9 +153,10 @@
 	&__slide {
 		position: relative;
 		background-repeat: no-repeat;
+		background-size: cover;
 
 		.onboarding__image {
-			margin: 90px auto 40px;
+			margin: 140px auto 60px;
 		}
 
 		&--first {
@@ -170,7 +172,7 @@
 
 			.yellow-btn {
 				position: absolute;
-				bottom: -140px;
+				bottom: -180px;
 				left: 50%;
 				transform: translateX(-50%);
 			}

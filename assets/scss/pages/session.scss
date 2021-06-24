@@ -36,6 +36,7 @@
 		&--first {
 			background-image: url('../../img/background-19.svg');
 			background-position: bottom;
+			background-size: contain;
 
 			&.is-hidden {
 				display: none;
@@ -46,6 +47,7 @@
 			display: none;
 			background-image: url('../../img/background-20.svg');
 			background-position: bottom;
+			background-size: contain;
 
 			&.is-active {
 				display: flex;
@@ -56,6 +58,7 @@
 			display: none;
 			background-image: url('../../img/background-21.svg');
 			background-position: bottom;
+			background-size: contain;
 
 			&.is-active {
 				display: flex;
@@ -66,6 +69,7 @@
 			display: none;
 			background-image: url('../../img/background-22.svg');
 			background-position: bottom;
+			background-size: contain;
 
 			&.is-active {
 				display: flex;
@@ -76,6 +80,7 @@
 			display: none;
 			background-image: url('../../img/background-23.svg');
 			background-position: bottom;
+			background-size: contain;
 
 			&.is-active {
 				display: flex;
@@ -86,6 +91,7 @@
 			display: none;
 			background-image: url('../../img/background-24.svg');
 			background-position: bottom;
+			background-size: contain;
 
 			&.is-active {
 				display: flex;
@@ -96,6 +102,7 @@
 			display: none;
 			background-image: url('../../img/background-18.svg');
 			background-position: top;
+			background-size: contain;
 
 			&.is-active {
 				display: flex;
@@ -404,7 +411,7 @@
 					content: '';
 					position: absolute;
 					top: -6px;
-					left: 11px;
+					left: 18px;
 					width: 70px;
 					height: 70px;
 					border-radius: 100%;
@@ -606,8 +613,17 @@
 		}
 	}
 
+	&__thanking-image {
+		width: 317px;
+		height: 317px;
+		border-radius: 30px;
+		background-image: url(../../img/recap-visual.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
 	&__thanking-text {
-		margin: 370px 0 -30px 0;
+		margin: 100px 0 -30px 0;
 		font-family: 'Montserrat';
 		font-weight: $fw-semibold;
 		font-size: 25px;

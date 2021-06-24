@@ -14,76 +14,13 @@
  * ----------------------------- */
 /* ---------- FONTS ---------- */
 /* ---------- COLORS ---------- */
-/* ------ MONTSERRAT BLACK ------ */
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 900;
-  src: url("../../fonts/Montserrat/Montserrat-Black.woff2") format("woff2");
-  font-display: swap;
-}
-/* ------ MONTSERRAT BLACK ITALIC ------ */
-@font-face {
-  font-family: "Montserrat";
-  font-style: italic;
-  font-weight: 900;
-  src: url("../../fonts/Montserrat/Montserrat-Black.woff2") format("woff2");
-  font-display: swap;
-}
 /* ------ MONTSERRAT BOLD ------ */
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  src: url("../../fonts/Montserrat/Montserrat-Black.woff2") format("woff2");
-  font-display: swap;
-}
-/* ------ MONTSERRAT BOLD ITALIC ------ */
-@font-face {
-  font-family: "Montserrat";
-  font-style: italic;
-  font-weight: 700;
-  src: url("../../fonts/Montserrat/Montserrat-Black.woff2") format("woff2");
-  font-display: swap;
-}
-/* ------ MONTSERRAT EXTRA BOLD ------ */
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 800;
-  src: url("../../fonts/Montserrat/Montserrat-Black.woff2") format("woff2");
-  font-display: swap;
-}
-/* ------ MONTSERRAT EXTRA BOLD ITALIC ------ */
-@font-face {
-  font-family: "Montserrat";
-  font-style: italic;
-  font-weight: 800;
-  src: url("../../fonts/Montserrat/Montserrat-Black.woff2") format("woff2");
-  font-display: swap;
-}
-/* ------ MONTSERRAT EXTRA LIGHT ------ */
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 200;
-  src: url("../../fonts/Montserrat/Montserrat-Black.woff2") format("woff2");
-  font-display: swap;
-}
-/* ------ MONTSERRAT EXTRA LIGHT ITALIC ------ */
-@font-face {
-  font-family: "Montserrat";
-  font-style: italic;
-  font-weight: 200;
-  src: url("../../fonts/Montserrat/Montserrat-Black.woff2") format("woff2");
-  font-display: swap;
-}
-/* ------ MONTSERRAT ITALIC ------ */
-@font-face {
-  font-family: "Montserrat";
-  font-style: italic;
-  font-weight: 400;
-  src: url("../../fonts/Montserrat/Montserrat-Black.woff2") format("woff2");
+  src: url("../../fonts/Montserrat/Montserrat-Bold.eot");
+  src: url("../../fonts/Montserrat/Montserrat-Bold.woff2") format("woff2"), url("../../fonts/Montserrat/Montserrat-Bold.woff") format("woff"), url("../../fonts/Montserrat/Montserrat-Bold.ttf") format("truetype"), url("../../fonts/Montserrat/Montserrat-Bold.svg") format("svg");
   font-display: swap;
 }
 /* ------ MONTSERRAT LIGHT ------ */
@@ -91,15 +28,8 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 300;
-  src: url("../../fonts/Montserrat/Montserrat-Black.woff2") format("woff2");
-  font-display: swap;
-}
-/* ------ MONTSERRAT LIGHT ITALIC ------ */
-@font-face {
-  font-family: "Montserrat";
-  font-style: italic;
-  font-weight: 300;
-  src: url("../../fonts/Montserrat/Montserrat-Black.woff2") format("woff2");
+  src: url("../../fonts/Montserrat/Montserrat-Light.eot");
+  src: url("../../fonts/Montserrat/Montserrat-Light.woff2") format("woff2"), url("../../fonts/Montserrat/Montserrat-Light.woff") format("woff"), url("../../fonts/Montserrat/Montserrat-Light.ttf") format("truetype"), url("../../fonts/Montserrat/Montserrat-Light.svg") format("svg");
   font-display: swap;
 }
 /* ------ MONTSERRAT MEDIUM ------ */
@@ -107,15 +37,8 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
-  src: url("../../fonts/Montserrat/Montserrat-Black.woff2") format("woff2");
-  font-display: swap;
-}
-/* ------ MONTSERRAT MEDIUM ITALIC ------ */
-@font-face {
-  font-family: "Montserrat";
-  font-style: italic;
-  font-weight: 500;
-  src: url("../../fonts/Montserrat/Montserrat-Black.woff2") format("woff2");
+  src: url("../../fonts/Montserrat/Montserrat-Medium.eot");
+  src: url("../../fonts/Montserrat/Montserrat-Medium.woff2") format("woff2"), url("../../fonts/Montserrat/Montserrat-Medium.woff") format("woff"), url("../../fonts/Montserrat/Montserrat-Medium.ttf") format("truetype"), url("../../fonts/Montserrat/Montserrat-Medium.svg") format("svg");
   font-display: swap;
 }
 /* ------ MONTSERRAT REGULAR ------ */
@@ -123,7 +46,8 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  src: url("../../fonts/Montserrat/Montserrat-Black.woff2") format("woff2");
+  src: url("../../fonts/Montserrat/Montserrat-Regular.eot");
+  src: url("../../fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"), url("../../fonts/Montserrat/Montserrat-Regular.woff") format("woff"), url("../../fonts/Montserrat/Montserrat-Regular.ttf") format("truetype"), url("../../fonts/Montserrat/Montserrat-Regular.svg") format("svg");
   font-display: swap;
 }
 /* ------ MONTSERRAT SEMI BOLD ------ */
@@ -131,31 +55,8 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  src: url("../../fonts/Montserrat/Montserrat-Black.woff2") format("woff2");
-  font-display: swap;
-}
-/* ------ MONTSERRAT SEMI BOLD ITALIC ------ */
-@font-face {
-  font-family: "Montserrat";
-  font-style: italic;
-  font-weight: 600;
-  src: url("../../fonts/Montserrat/Montserrat-Black.woff2") format("woff2");
-  font-display: swap;
-}
-/* ------ MONTSERRAT THIN ------ */
-@font-face {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 100;
-  src: url("../../fonts/Montserrat/Montserrat-Black.woff2") format("woff2");
-  font-display: swap;
-}
-/* ------ MONTSERRAT THIN ITALIC ------ */
-@font-face {
-  font-family: "Montserrat";
-  font-style: italic;
-  font-weight: 100;
-  src: url("../../fonts/Montserrat/Montserrat-Black.woff2") format("woff2");
+  src: url("../../fonts/Montserrat/Montserrat-SemiBold.eot");
+  src: url("../../fonts/Montserrat/Montserrat-SemiBold.woff2") format("woff2"), url("../../fonts/Montserrat/Montserrat-SemiBold.woff") format("woff"), url("../../fonts/Montserrat/Montserrat-SemiBold.ttf") format("truetype"), url("../../fonts/Montserrat/Montserrat-SemiBold.svg") format("svg");
   font-display: swap;
 }
 .subscription {
@@ -185,6 +86,7 @@
 .subscription__wrapper--first {
   background-image: url("../../img/background-5.svg");
   background-position: bottom;
+  background-size: contain;
 }
 .subscription__wrapper--first.is-hidden {
   display: none;
@@ -193,6 +95,7 @@
   display: none;
   background-image: url("../../img/background-11.svg");
   background-position: bottom;
+  background-size: contain;
 }
 .subscription__wrapper--second.is-active {
   display: flex;
@@ -201,6 +104,7 @@
   display: none;
   background-image: url("../../img/background-12.svg");
   background-position: bottom;
+  background-size: contain;
 }
 .subscription__wrapper--third.is-active {
   display: flex;
@@ -209,6 +113,7 @@
   display: none;
   background-image: url("../../img/background-13.svg");
   background-position: bottom;
+  background-size: contain;
 }
 .subscription__wrapper--fourth.is-active {
   display: flex;
@@ -217,6 +122,7 @@
   display: none;
   background-image: url("../../img/background-10.svg");
   background-position: center 100px;
+  background-size: contain;
 }
 .subscription__wrapper--fifth.is-active {
   display: flex;
@@ -225,6 +131,7 @@
   display: none;
   background-image: url("../../img/background-14.svg");
   background-position: bottom;
+  background-size: contain;
 }
 .subscription__wrapper--sixth.is-active {
   display: flex;
@@ -233,6 +140,7 @@
   display: none;
   background-image: url("../../img/background-15.svg");
   background-position: bottom;
+  background-size: contain;
 }
 .subscription__wrapper--seventh.is-active {
   display: flex;
@@ -250,6 +158,7 @@
   display: none;
   background-image: url("../../img/background-16.svg");
   background-position: bottom;
+  background-size: contain;
 }
 .subscription__wrapper--eighth.is-active {
   display: flex;
@@ -258,6 +167,7 @@
   display: none;
   background-image: url("../../img/background-9.svg");
   background-position: bottom left;
+  background-size: contain;
 }
 .subscription__wrapper--nineth.is-active {
   display: flex;
@@ -277,6 +187,7 @@
   display: none;
   background-image: url("../../img/background-17.svg");
   background-position: bottom left;
+  background-size: contain;
 }
 .subscription__wrapper--tenth.is-active {
   display: flex;
@@ -361,7 +272,7 @@
   line-height: 135%;
 }
 .subscription__date-wrapper .date-small {
-  margin: 30px 0;
+  margin: 40px 0;
   font-size: 20px;
   opacity: 0.5;
 }
@@ -369,7 +280,7 @@
   margin: 0 40px;
 }
 .subscription__date-wrapper .date-medium {
-  margin: 30px 0;
+  margin: 40px 0;
   font-size: 22px;
   opacity: 0.5;
 }
@@ -377,7 +288,7 @@
   margin: 0 50px;
 }
 .subscription__date-wrapper .date-large {
-  margin: 30px 0;
+  margin: 40px 0;
   background-color: #11205E;
   border-radius: 10px;
   padding: 17px;
