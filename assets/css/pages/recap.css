@@ -531,6 +531,7 @@
   border-radius: 8px;
 }
 .recap__ending-title {
+  width: 100%;
   font-family: "Montserrat";
   font-weight: 600;
   font-size: 40px;
@@ -561,6 +562,7 @@
   text-align: center;
 }
 .recap__ending p {
+  width: 70%;
   font-family: "Montserrat";
   font-weight: 400;
   font-size: 16px;

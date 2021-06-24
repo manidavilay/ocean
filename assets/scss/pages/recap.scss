@@ -411,6 +411,7 @@
     }
 
     &__ending-title {
+        width: 100%;
         font-family: 'Montserrat';
         font-weight: $fw-semibold;
         font-size: 40px;
@@ -443,7 +444,8 @@
             text-align: center;
         }
 
-        p {
+        p { 
+            width: 70%;
             font-family: 'Montserrat';
             font-weight: $fw-regular;
             font-size: 16px;
